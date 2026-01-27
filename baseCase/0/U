@@ -1,0 +1,67 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Website:  https://openfoam.org                  |
+|   \\  /    A nd           | Version:  12                                    |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volVectorField;
+    object      U;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// Velocidad para ángulo de ataque: 0 grados
+// Ux = 10.000000 m/s, Uy = 0 m/s
+
+dimensions      [0 1 -1 0 0 0 0];
+
+internalField   uniform (40.000000 0 0);
+
+boundaryField
+{
+    inlet
+{
+        type fixedValue;
+        value $internalField;
+}
+
+
+    outlet
+    {
+         type zeroGradient;
+    }
+
+    airfoilInternal
+    {
+        type noSlip;
+    }
+
+    airfoilExternal
+    {
+        type noSlip;
+    }
+
+    externalWalls
+{
+        type fixedValue;
+        value $internalField;
+}
+
+
+    frontAndBack
+    {
+          type fixedValue;
+        value $internalField;
+    }
+
+    avion
+    {
+        type noSlip;
+    }
+}
+
+// ************************************************************************* //

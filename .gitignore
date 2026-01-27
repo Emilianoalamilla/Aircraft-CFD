@@ -1,0 +1,28 @@
+# --- Resultados Numéricos de OpenFOAM ---
+**/[1-9]*/
+**/[0-9][0-9]*/
+**/[0-9][0-9][0-9]*/
+!**/0/
+**/processor*/
+**/dynamicCode/
+**/*.obj
+**/*.foam
+**/postProcessing/
+
+# --- Imágenes y Videos (Archivos pesados) ---
+# Ignorar todas las ráfagas de imágenes numeradas (ej: sideview.0001.png)
+**/*.0*.png
+**/*.1*.png
+
+# Ignorar videos de animaciones
+**/*.mp4
+
+# Ignorar las carpetas específicas de vistas
+animaciones/sideview/
+animaciones/streamline/
+animaciones/topview/
+
+# --- EXCEPCIONES (Lo que SÍ queremos en GitHub) ---
+# Queremos las gráficas finales para el README
+!animaciones/*.png
+!polar_completa.png

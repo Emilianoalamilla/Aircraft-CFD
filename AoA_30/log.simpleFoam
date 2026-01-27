@@ -1,0 +1,3225 @@
+
+simpleFoam has been superseded and replaced by the more general
+incompressibleFluid solver module executed by the foamRun application:
+
+    foamRun -solver incompressibleFluid
+
+
+simpleFoam has been superseded and replaced by the more general
+incompressibleFluid solver module executed by the foamRun application:
+
+    foamRun -solver incompressibleFluid
+
+
+simpleFoam has been superseded and replaced by the more general
+incompressibleFluid solver module executed by the foamRun application:
+
+    foamRun -solver incompressibleFluid
+
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 12-86e126a7bc4d
+Exec   : foamRun -solver incompressibleFluid -parallel
+Date   : Jun 24 2025
+Time   : 18:46:44
+Host   : "EmiAlamilla"
+PID    : 144973
+I/O    : uncollated
+Case   : /home/emilianoalamilla/CFD/Aircraft/AoA_30
+nProcs : 3
+Slaves : 
+2
+(
+"EmiAlamilla.144975"
+"EmiAlamilla.144977"
+)
+
+Pstream initialised with:
+    floatTransfer      : false
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Selecting solver incompressibleFluid
+Selecting viscosity model constant
+Selecting turbulence model type RAS
+Selecting RAS turbulence model SpalartAllmaras
+RAS
+{
+    RASModel        SpalartAllmaras;
+    turbulence      on;
+    printCoeffs     on;
+    sigmaNut        0.66666;
+    kappa           0.41;
+    Cb1             0.1355;
+    Cb2             0.622;
+    Cw2             0.3;
+    Cw3             2;
+    Cv1             7.1;
+    Cs              0.3;
+}
+
+No MRF models present
+
+
+SIMPLE: Convergence criteria found
+        p: tolerance 1e-05
+        U: tolerance 1e-05
+        nuTilda: tolerance 1e-05
+
+
+SIMPLE: Operating solver in steady-state mode with 1 outer corrector
+SIMPLE: Operating solver in SIMPLE mode
+
+
+
+Starting time loop
+
+forcesBase canard_1:
+    Not including porosity effects
+forces canard_1:
+    Not including porosity effects
+forceCoeffs canard_1:
+    Not including porosity effects
+forcesBase canard_2:
+    Not including porosity effects
+forces canard_2:
+    Not including porosity effects
+forceCoeffs canard_2:
+    Not including porosity effects
+forcesBase canard_3:
+    Not including porosity effects
+forces canard_3:
+    Not including porosity effects
+forceCoeffs canard_3:
+    Not including porosity effects
+forcesBase canard_4:
+    Not including porosity effects
+forces canard_4:
+    Not including porosity effects
+forceCoeffs canard_4:
+    Not including porosity effects
+forcesBase canard_5:
+    Not including porosity effects
+forces canard_5:
+    Not including porosity effects
+forceCoeffs canard_5:
+    Not including porosity effects
+forcesBase canard_6:
+    Not including porosity effects
+forces canard_6:
+    Not including porosity effects
+forceCoeffs canard_6:
+    Not including porosity effects
+forcesBase canard_7:
+    Not including porosity effects
+forces canard_7:
+    Not including porosity effects
+forceCoeffs canard_7:
+    Not including porosity effects
+forcesBase canard_8:
+    Not including porosity effects
+forces canard_8:
+    Not including porosity effects
+forceCoeffs canard_8:
+    Not including porosity effects
+forcesBase canard_9:
+    Not including porosity effects
+forces canard_9:
+    Not including porosity effects
+forceCoeffs canard_9:
+    Not including porosity effects
+forcesBase canard_10:
+    Not including porosity effects
+forces canard_10:
+    Not including porosity effects
+forceCoeffs canard_10:
+    Not including porosity effects
+forcesBase canard_11:
+    Not including porosity effects
+forces canard_11:
+    Not including porosity effects
+forceCoeffs canard_11:
+    Not including porosity effects
+forceCoeffs canard_1 write:
+    Cm    = -0.00134658
+    Cd    = 0.00679247
+    Cl    = 0.000649319
+    Cl(f) = -0.00102192
+    Cl(r) = 0.00167124
+
+forceCoeffs canard_2 write:
+    Cm    = -0.000308267
+    Cd    = 0.00679247
+    Cl    = 0.000649319
+    Cl(f) = 1.63923e-05
+    Cl(r) = 0.000632927
+
+forceCoeffs canard_3 write:
+    Cm    = 0.000730044
+    Cd    = 0.00679247
+    Cl    = 0.000649319
+    Cl(f) = 0.0010547
+    Cl(r) = -0.000405384
+
+forceCoeffs canard_4 write:
+    Cm    = 0.00176836
+    Cd    = 0.00679247
+    Cl    = 0.000649319
+    Cl(f) = 0.00209302
+    Cl(r) = -0.0014437
+
+forceCoeffs canard_5 write:
+    Cm    = 0.00280667
+    Cd    = 0.00679247
+    Cl    = 0.000649319
+    Cl(f) = 0.00313133
+    Cl(r) = -0.00248201
+
+forceCoeffs canard_6 write:
+    Cm    = 0.00384498
+    Cd    = 0.00679247
+    Cl    = 0.000649319
+    Cl(f) = 0.00416964
+    Cl(r) = -0.00352032
+
+forceCoeffs canard_7 write:
+    Cm    = 0.00488329
+    Cd    = 0.00679247
+    Cl    = 0.000649319
+    Cl(f) = 0.00520795
+    Cl(r) = -0.00455863
+
+forceCoeffs canard_8 write:
+    Cm    = 0.0059216
+    Cd    = 0.00679247
+    Cl    = 0.000649319
+    Cl(f) = 0.00624626
+    Cl(r) = -0.00559694
+
+forceCoeffs canard_9 write:
+    Cm    = 0.00695991
+    Cd    = 0.00679247
+    Cl    = 0.000649319
+    Cl(f) = 0.00728457
+    Cl(r) = -0.00663525
+
+forceCoeffs canard_10 write:
+    Cm    = 0.00799822
+    Cd    = 0.00679247
+    Cl    = 0.000649319
+    Cl(f) = 0.00832288
+    Cl(r) = -0.00767356
+
+forceCoeffs canard_11 write:
+    Cm    = 0.00903654
+    Cd    = 0.00679247
+    Cl    = 0.000649319
+    Cl(f) = 0.0093612
+    Cl(r) = -0.00871188
+
+Time = 1s
+
+smoothSolver:  Solving for Ux, Initial residual = 1, Final residual = 0.0603205, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 1, Final residual = 0.0905349, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 1, Final residual = 0.027464, No Iterations 4
+GAMG:  Solving for p, Initial residual = 1, Final residual = 0.0833038, No Iterations 5
+time step continuity errors : sum local = 0.000936098, global = -6.61326e-06, cumulative = -6.61326e-06
+Selecting patchDistMethod meshWave
+smoothSolver:  Solving for nuTilda, Initial residual = 1, Final residual = 0.0223367, No Iterations 2
+ExecutionTime = 74.9132 s  ClockTime = 81 s
+
+forceCoeffs canard_1 write:
+    Cm    = -12.5738
+    Cd    = 17.4859
+    Cl    = 24.7357
+    Cl(f) = -0.20595
+    Cl(r) = 24.9417
+
+forceCoeffs canard_2 write:
+    Cm    = -4.66176
+    Cd    = 17.4859
+    Cl    = 24.7357
+    Cl(f) = 7.70611
+    Cl(r) = 17.0296
+
+forceCoeffs canard_3 write:
+    Cm    = 3.2503
+    Cd    = 17.4859
+    Cl    = 24.7357
+    Cl(f) = 15.6182
+    Cl(r) = 9.11757
+
+forceCoeffs canard_4 write:
+    Cm    = 11.1624
+    Cd    = 17.4859
+    Cl    = 24.7357
+    Cl(f) = 23.5302
+    Cl(r) = 1.20551
+
+forceCoeffs canard_5 write:
+    Cm    = 19.0744
+    Cd    = 17.4859
+    Cl    = 24.7357
+    Cl(f) = 31.4423
+    Cl(r) = -6.70655
+
+forceCoeffs canard_6 write:
+    Cm    = 26.9865
+    Cd    = 17.4859
+    Cl    = 24.7357
+    Cl(f) = 39.3544
+    Cl(r) = -14.6186
+
+forceCoeffs canard_7 write:
+    Cm    = 34.8985
+    Cd    = 17.4859
+    Cl    = 24.7357
+    Cl(f) = 47.2664
+    Cl(r) = -22.5307
+
+forceCoeffs canard_8 write:
+    Cm    = 42.8106
+    Cd    = 17.4859
+    Cl    = 24.7357
+    Cl(f) = 55.1785
+    Cl(r) = -30.4427
+
+forceCoeffs canard_9 write:
+    Cm    = 50.7227
+    Cd    = 17.4859
+    Cl    = 24.7357
+    Cl(f) = 63.0905
+    Cl(r) = -38.3548
+
+forceCoeffs canard_10 write:
+    Cm    = 58.6347
+    Cd    = 17.4859
+    Cl    = 24.7357
+    Cl(f) = 71.0026
+    Cl(r) = -46.2669
+
+forceCoeffs canard_11 write:
+    Cm    = 66.5468
+    Cd    = 17.4859
+    Cl    = 24.7357
+    Cl(f) = 78.9147
+    Cl(r) = -54.1789
+
+Time = 2s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.219707, Final residual = 0.0147938, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.0732497, Final residual = 0.00523265, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.628857, Final residual = 0.0422278, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.181345, Final residual = 0.00914343, No Iterations 3
+time step continuity errors : sum local = 0.00174169, global = -5.73296e-06, cumulative = -1.23462e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.133829, Final residual = 0.00457038, No Iterations 2
+ExecutionTime = 90.6059 s  ClockTime = 97 s
+
+forceCoeffs canard_1 write:
+    Cm    = -7.90429
+    Cd    = 10.8937
+    Cl    = 16.0404
+    Cl(f) = 0.115921
+    Cl(r) = 15.9245
+
+forceCoeffs canard_2 write:
+    Cm    = -2.83195
+    Cd    = 10.8937
+    Cl    = 16.0404
+    Cl(f) = 5.18826
+    Cl(r) = 10.8522
+
+forceCoeffs canard_3 write:
+    Cm    = 2.24038
+    Cd    = 10.8937
+    Cl    = 16.0404
+    Cl(f) = 10.2606
+    Cl(r) = 5.77983
+
+forceCoeffs canard_4 write:
+    Cm    = 7.31272
+    Cd    = 10.8937
+    Cl    = 16.0404
+    Cl(f) = 15.3329
+    Cl(r) = 0.707492
+
+forceCoeffs canard_5 write:
+    Cm    = 12.3851
+    Cd    = 10.8937
+    Cl    = 16.0404
+    Cl(f) = 20.4053
+    Cl(r) = -4.36485
+
+forceCoeffs canard_6 write:
+    Cm    = 17.4574
+    Cd    = 10.8937
+    Cl    = 16.0404
+    Cl(f) = 25.4776
+    Cl(r) = -9.43718
+
+forceCoeffs canard_7 write:
+    Cm    = 22.5297
+    Cd    = 10.8937
+    Cl    = 16.0404
+    Cl(f) = 30.5499
+    Cl(r) = -14.5095
+
+forceCoeffs canard_8 write:
+    Cm    = 27.6021
+    Cd    = 10.8937
+    Cl    = 16.0404
+    Cl(f) = 35.6223
+    Cl(r) = -19.5819
+
+forceCoeffs canard_9 write:
+    Cm    = 32.6744
+    Cd    = 10.8937
+    Cl    = 16.0404
+    Cl(f) = 40.6946
+    Cl(r) = -24.6542
+
+forceCoeffs canard_10 write:
+    Cm    = 37.7467
+    Cd    = 10.8937
+    Cl    = 16.0404
+    Cl(f) = 45.767
+    Cl(r) = -29.7265
+
+forceCoeffs canard_11 write:
+    Cm    = 42.8191
+    Cd    = 10.8937
+    Cl    = 16.0404
+    Cl(f) = 50.8393
+    Cl(r) = -34.7989
+
+Time = 3s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0463236, Final residual = 0.00310385, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00989687, Final residual = 0.000700563, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.270761, Final residual = 0.0179431, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.322905, Final residual = 0.0240251, No Iterations 3
+time step continuity errors : sum local = 0.00410768, global = 3.31654e-05, cumulative = 2.08192e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0822293, Final residual = 0.0029895, No Iterations 2
+bounding nuTilda, min: -0.00178899 max: 0.0667752 average: 0.0192342
+ExecutionTime = 106.086 s  ClockTime = 112 s
+
+forceCoeffs canard_1 write:
+    Cm    = 1.52547
+    Cd    = -1.77139
+    Cl    = -1.45097
+    Cl(f) = 0.799988
+    Cl(r) = -2.25096
+
+forceCoeffs canard_2 write:
+    Cm    = 0.963566
+    Cd    = -1.77139
+    Cl    = -1.45097
+    Cl(f) = 0.238082
+    Cl(r) = -1.68905
+
+forceCoeffs canard_3 write:
+    Cm    = 0.40166
+    Cd    = -1.77139
+    Cl    = -1.45097
+    Cl(f) = -0.323824
+    Cl(r) = -1.12714
+
+forceCoeffs canard_4 write:
+    Cm    = -0.160247
+    Cd    = -1.77139
+    Cl    = -1.45097
+    Cl(f) = -0.88573
+    Cl(r) = -0.565237
+
+forceCoeffs canard_5 write:
+    Cm    = -0.722153
+    Cd    = -1.77139
+    Cl    = -1.45097
+    Cl(f) = -1.44764
+    Cl(r) = -0.00333078
+
+forceCoeffs canard_6 write:
+    Cm    = -1.28406
+    Cd    = -1.77139
+    Cl    = -1.45097
+    Cl(f) = -2.00954
+    Cl(r) = 0.558575
+
+forceCoeffs canard_7 write:
+    Cm    = -1.84596
+    Cd    = -1.77139
+    Cl    = -1.45097
+    Cl(f) = -2.57145
+    Cl(r) = 1.12048
+
+forceCoeffs canard_8 write:
+    Cm    = -2.40787
+    Cd    = -1.77139
+    Cl    = -1.45097
+    Cl(f) = -3.13335
+    Cl(r) = 1.68239
+
+forceCoeffs canard_9 write:
+    Cm    = -2.96978
+    Cd    = -1.77139
+    Cl    = -1.45097
+    Cl(f) = -3.69526
+    Cl(r) = 2.24429
+
+forceCoeffs canard_10 write:
+    Cm    = -3.53168
+    Cd    = -1.77139
+    Cl    = -1.45097
+    Cl(f) = -4.25717
+    Cl(r) = 2.8062
+
+forceCoeffs canard_11 write:
+    Cm    = -4.09359
+    Cd    = -1.77139
+    Cl    = -1.45097
+    Cl(f) = -4.81907
+    Cl(r) = 3.36811
+
+Time = 4s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.015874, Final residual = 0.000891472, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00294785, Final residual = 0.000183033, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.104732, Final residual = 0.00616126, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.173536, Final residual = 0.0120424, No Iterations 3
+time step continuity errors : sum local = 0.00259482, global = 3.42041e-05, cumulative = 5.50233e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0789057, Final residual = 0.00274537, No Iterations 2
+bounding nuTilda, min: -0.000179956 max: 0.0667752 average: 0.0183501
+ExecutionTime = 121.97 s  ClockTime = 128 s
+
+forceCoeffs canard_1 write:
+    Cm    = 5.93419
+    Cd    = -7.771
+    Cl    = -10.0289
+    Cl(f) = 0.919766
+    Cl(r) = -10.9486
+
+forceCoeffs canard_2 write:
+    Cm    = 2.63695
+    Cd    = -7.771
+    Cl    = -10.0289
+    Cl(f) = -2.37748
+    Cl(r) = -7.65138
+
+forceCoeffs canard_3 write:
+    Cm    = -0.660296
+    Cd    = -7.771
+    Cl    = -10.0289
+    Cl(f) = -5.67472
+    Cl(r) = -4.35413
+
+forceCoeffs canard_4 write:
+    Cm    = -3.95754
+    Cd    = -7.771
+    Cl    = -10.0289
+    Cl(f) = -8.97197
+    Cl(r) = -1.05689
+
+forceCoeffs canard_5 write:
+    Cm    = -7.25479
+    Cd    = -7.771
+    Cl    = -10.0289
+    Cl(f) = -12.2692
+    Cl(r) = 2.24036
+
+forceCoeffs canard_6 write:
+    Cm    = -10.552
+    Cd    = -7.771
+    Cl    = -10.0289
+    Cl(f) = -15.5665
+    Cl(r) = 5.5376
+
+forceCoeffs canard_7 write:
+    Cm    = -13.8493
+    Cd    = -7.771
+    Cl    = -10.0289
+    Cl(f) = -18.8637
+    Cl(r) = 8.83485
+
+forceCoeffs canard_8 write:
+    Cm    = -17.1465
+    Cd    = -7.771
+    Cl    = -10.0289
+    Cl(f) = -22.1609
+    Cl(r) = 12.1321
+
+forceCoeffs canard_9 write:
+    Cm    = -20.4438
+    Cd    = -7.771
+    Cl    = -10.0289
+    Cl(f) = -25.4582
+    Cl(r) = 15.4293
+
+forceCoeffs canard_10 write:
+    Cm    = -23.741
+    Cd    = -7.771
+    Cl    = -10.0289
+    Cl(f) = -28.7554
+    Cl(r) = 18.7266
+
+forceCoeffs canard_11 write:
+    Cm    = -27.0383
+    Cd    = -7.771
+    Cl    = -10.0289
+    Cl(f) = -32.0527
+    Cl(r) = 22.0238
+
+Time = 5s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0288951, Final residual = 0.00183065, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00689287, Final residual = 0.000477633, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.149932, Final residual = 0.00952182, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0834133, Final residual = 0.00480545, No Iterations 3
+time step continuity errors : sum local = 0.00211728, global = 5.66016e-05, cumulative = 0.000111625
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0748582, Final residual = 0.00252403, No Iterations 2
+ExecutionTime = 152.744 s  ClockTime = 162 s
+
+forceCoeffs canard_1 write:
+    Cm    = 3.39313
+    Cd    = -4.55592
+    Cl    = -5.92203
+    Cl(f) = 0.432114
+    Cl(r) = -6.35414
+
+forceCoeffs canard_2 write:
+    Cm    = 1.45042
+    Cd    = -4.55592
+    Cl    = -5.92203
+    Cl(f) = -1.5106
+    Cl(r) = -4.41143
+
+forceCoeffs canard_3 write:
+    Cm    = -0.492296
+    Cd    = -4.55592
+    Cl    = -5.92203
+    Cl(f) = -3.45331
+    Cl(r) = -2.46872
+
+forceCoeffs canard_4 write:
+    Cm    = -2.43501
+    Cd    = -4.55592
+    Cl    = -5.92203
+    Cl(f) = -5.39602
+    Cl(r) = -0.526007
+
+forceCoeffs canard_5 write:
+    Cm    = -4.37772
+    Cd    = -4.55592
+    Cl    = -5.92203
+    Cl(f) = -7.33873
+    Cl(r) = 1.4167
+
+forceCoeffs canard_6 write:
+    Cm    = -6.32043
+    Cd    = -4.55592
+    Cl    = -5.92203
+    Cl(f) = -9.28145
+    Cl(r) = 3.35942
+
+forceCoeffs canard_7 write:
+    Cm    = -8.26314
+    Cd    = -4.55592
+    Cl    = -5.92203
+    Cl(f) = -11.2242
+    Cl(r) = 5.30213
+
+forceCoeffs canard_8 write:
+    Cm    = -10.2059
+    Cd    = -4.55592
+    Cl    = -5.92203
+    Cl(f) = -13.1669
+    Cl(r) = 7.24484
+
+forceCoeffs canard_9 write:
+    Cm    = -12.1486
+    Cd    = -4.55592
+    Cl    = -5.92203
+    Cl(f) = -15.1096
+    Cl(r) = 9.18755
+
+forceCoeffs canard_10 write:
+    Cm    = -14.0913
+    Cd    = -4.55592
+    Cl    = -5.92203
+    Cl(f) = -17.0523
+    Cl(r) = 11.1303
+
+forceCoeffs canard_11 write:
+    Cm    = -16.034
+    Cd    = -4.55592
+    Cl    = -5.92203
+    Cl(f) = -18.995
+    Cl(r) = 13.073
+
+Time = 6s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0618548, Final residual = 0.00401664, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.0151674, Final residual = 0.00103429, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.203394, Final residual = 0.0130863, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.11185, Final residual = 0.0063454, No Iterations 3
+time step continuity errors : sum local = 0.0024676, global = 1.42489e-05, cumulative = 0.000125874
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0794859, Final residual = 0.0024862, No Iterations 2
+bounding nuTilda, min: -0.000296795 max: 0.0667752 average: 0.0172321
+ExecutionTime = 167.346 s  ClockTime = 176 s
+
+forceCoeffs canard_1 write:
+    Cm    = -1.48112
+    Cd    = 1.81309
+    Cl    = 2.71167
+    Cl(f) = -0.125279
+    Cl(r) = 2.83695
+
+forceCoeffs canard_2 write:
+    Cm    = -0.627365
+    Cd    = 1.81309
+    Cl    = 2.71167
+    Cl(f) = 0.728471
+    Cl(r) = 1.9832
+
+forceCoeffs canard_3 write:
+    Cm    = 0.226385
+    Cd    = 1.81309
+    Cl    = 2.71167
+    Cl(f) = 1.58222
+    Cl(r) = 1.12945
+
+forceCoeffs canard_4 write:
+    Cm    = 1.08014
+    Cd    = 1.81309
+    Cl    = 2.71167
+    Cl(f) = 2.43597
+    Cl(r) = 0.275701
+
+forceCoeffs canard_5 write:
+    Cm    = 1.93389
+    Cd    = 1.81309
+    Cl    = 2.71167
+    Cl(f) = 3.28972
+    Cl(r) = -0.57805
+
+forceCoeffs canard_6 write:
+    Cm    = 2.78764
+    Cd    = 1.81309
+    Cl    = 2.71167
+    Cl(f) = 4.14347
+    Cl(r) = -1.4318
+
+forceCoeffs canard_7 write:
+    Cm    = 3.64139
+    Cd    = 1.81309
+    Cl    = 2.71167
+    Cl(f) = 4.99722
+    Cl(r) = -2.28555
+
+forceCoeffs canard_8 write:
+    Cm    = 4.49514
+    Cd    = 1.81309
+    Cl    = 2.71167
+    Cl(f) = 5.85097
+    Cl(r) = -3.1393
+
+forceCoeffs canard_9 write:
+    Cm    = 5.34889
+    Cd    = 1.81309
+    Cl    = 2.71167
+    Cl(f) = 6.70473
+    Cl(r) = -3.99305
+
+forceCoeffs canard_10 write:
+    Cm    = 6.20264
+    Cd    = 1.81309
+    Cl    = 2.71167
+    Cl(f) = 7.55848
+    Cl(r) = -4.8468
+
+forceCoeffs canard_11 write:
+    Cm    = 7.05639
+    Cd    = 1.81309
+    Cl    = 2.71167
+    Cl(f) = 8.41223
+    Cl(r) = -5.70055
+
+Time = 7s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0477487, Final residual = 0.00256105, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.0214425, Final residual = 0.00132592, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.162846, Final residual = 0.00952456, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.228681, Final residual = 0.0137696, No Iterations 3
+time step continuity errors : sum local = 0.00172621, global = -3.01589e-05, cumulative = 9.57149e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0729561, Final residual = 0.0022039, No Iterations 2
+bounding nuTilda, min: -0.00757457 max: 0.0667752 average: 0.0168368
+ExecutionTime = 183.75 s  ClockTime = 193 s
+
+forceCoeffs canard_1 write:
+    Cm    = -3.78185
+    Cd    = 4.96498
+    Cl    = 7.2863
+    Cl(f) = -0.138697
+    Cl(r) = 7.42499
+
+forceCoeffs canard_2 write:
+    Cm    = -1.47559
+    Cd    = 4.96498
+    Cl    = 7.2863
+    Cl(f) = 2.16756
+    Cl(r) = 5.11874
+
+forceCoeffs canard_3 write:
+    Cm    = 0.83067
+    Cd    = 4.96498
+    Cl    = 7.2863
+    Cl(f) = 4.47382
+    Cl(r) = 2.81248
+
+forceCoeffs canard_4 write:
+    Cm    = 3.13693
+    Cd    = 4.96498
+    Cl    = 7.2863
+    Cl(f) = 6.78008
+    Cl(r) = 0.506221
+
+forceCoeffs canard_5 write:
+    Cm    = 5.44319
+    Cd    = 4.96498
+    Cl    = 7.2863
+    Cl(f) = 9.08633
+    Cl(r) = -1.80004
+
+forceCoeffs canard_6 write:
+    Cm    = 7.74944
+    Cd    = 4.96498
+    Cl    = 7.2863
+    Cl(f) = 11.3926
+    Cl(r) = -4.1063
+
+forceCoeffs canard_7 write:
+    Cm    = 10.0557
+    Cd    = 4.96498
+    Cl    = 7.2863
+    Cl(f) = 13.6989
+    Cl(r) = -6.41255
+
+forceCoeffs canard_8 write:
+    Cm    = 12.362
+    Cd    = 4.96498
+    Cl    = 7.2863
+    Cl(f) = 16.0051
+    Cl(r) = -8.71881
+
+forceCoeffs canard_9 write:
+    Cm    = 14.6682
+    Cd    = 4.96498
+    Cl    = 7.2863
+    Cl(f) = 18.3114
+    Cl(r) = -11.0251
+
+forceCoeffs canard_10 write:
+    Cm    = 16.9745
+    Cd    = 4.96498
+    Cl    = 7.2863
+    Cl(f) = 20.6176
+    Cl(r) = -13.3313
+
+forceCoeffs canard_11 write:
+    Cm    = 19.2807
+    Cd    = 4.96498
+    Cl    = 7.2863
+    Cl(f) = 22.9239
+    Cl(r) = -15.6376
+
+Time = 8s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0274424, Final residual = 0.00163652, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00975155, Final residual = 0.000653395, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.1465, Final residual = 0.00844468, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.185372, Final residual = 0.012238, No Iterations 3
+time step continuity errors : sum local = 0.00200943, global = -6.47064e-05, cumulative = 3.10085e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0626777, Final residual = 0.00187833, No Iterations 2
+bounding nuTilda, min: -0.0149109 max: 0.0667752 average: 0.0165414
+ExecutionTime = 198.994 s  ClockTime = 208 s
+
+forceCoeffs canard_1 write:
+    Cm    = -2.52099
+    Cd    = 3.42172
+    Cl    = 5.48755
+    Cl(f) = 0.222784
+    Cl(r) = 5.26477
+
+forceCoeffs canard_2 write:
+    Cm    = -0.825721
+    Cd    = 3.42172
+    Cl    = 5.48755
+    Cl(f) = 1.91805
+    Cl(r) = 3.5695
+
+forceCoeffs canard_3 write:
+    Cm    = 0.869549
+    Cd    = 3.42172
+    Cl    = 5.48755
+    Cl(f) = 3.61333
+    Cl(r) = 1.87423
+
+forceCoeffs canard_4 write:
+    Cm    = 2.56482
+    Cd    = 3.42172
+    Cl    = 5.48755
+    Cl(f) = 5.3086
+    Cl(r) = 0.178956
+
+forceCoeffs canard_5 write:
+    Cm    = 4.26009
+    Cd    = 3.42172
+    Cl    = 5.48755
+    Cl(f) = 7.00387
+    Cl(r) = -1.51631
+
+forceCoeffs canard_6 write:
+    Cm    = 5.95536
+    Cd    = 3.42172
+    Cl    = 5.48755
+    Cl(f) = 8.69914
+    Cl(r) = -3.21159
+
+forceCoeffs canard_7 write:
+    Cm    = 7.65063
+    Cd    = 3.42172
+    Cl    = 5.48755
+    Cl(f) = 10.3944
+    Cl(r) = -4.90686
+
+forceCoeffs canard_8 write:
+    Cm    = 9.3459
+    Cd    = 3.42172
+    Cl    = 5.48755
+    Cl(f) = 12.0897
+    Cl(r) = -6.60213
+
+forceCoeffs canard_9 write:
+    Cm    = 11.0412
+    Cd    = 3.42172
+    Cl    = 5.48755
+    Cl(f) = 13.785
+    Cl(r) = -8.2974
+
+forceCoeffs canard_10 write:
+    Cm    = 12.7364
+    Cd    = 3.42172
+    Cl    = 5.48755
+    Cl(f) = 15.4802
+    Cl(r) = -9.99267
+
+forceCoeffs canard_11 write:
+    Cm    = 14.4317
+    Cd    = 3.42172
+    Cl    = 5.48755
+    Cl(f) = 17.1755
+    Cl(r) = -11.6879
+
+Time = 9s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0181792, Final residual = 0.00112561, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00441491, Final residual = 0.000290195, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.13552, Final residual = 0.00824979, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.235589, Final residual = 0.0118292, No Iterations 3
+time step continuity errors : sum local = 0.001636, global = -5.38486e-05, cumulative = -2.28401e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0544066, Final residual = 0.00171643, No Iterations 2
+bounding nuTilda, min: -0.0113426 max: 0.0667752 average: 0.0163021
+ExecutionTime = 216.815 s  ClockTime = 226 s
+
+forceCoeffs canard_1 write:
+    Cm    = -0.0898865
+    Cd    = 0.281471
+    Cl    = 1.42419
+    Cl(f) = 0.622206
+    Cl(r) = 0.801979
+
+forceCoeffs canard_2 write:
+    Cm    = 0.270537
+    Cd    = 0.281471
+    Cl    = 1.42419
+    Cl(f) = 0.98263
+    Cl(r) = 0.441555
+
+forceCoeffs canard_3 write:
+    Cm    = 0.630961
+    Cd    = 0.281471
+    Cl    = 1.42419
+    Cl(f) = 1.34305
+    Cl(r) = 0.0811314
+
+forceCoeffs canard_4 write:
+    Cm    = 0.991385
+    Cd    = 0.281471
+    Cl    = 1.42419
+    Cl(f) = 1.70348
+    Cl(r) = -0.279293
+
+forceCoeffs canard_5 write:
+    Cm    = 1.35181
+    Cd    = 0.281471
+    Cl    = 1.42419
+    Cl(f) = 2.0639
+    Cl(r) = -0.639716
+
+forceCoeffs canard_6 write:
+    Cm    = 1.71223
+    Cd    = 0.281471
+    Cl    = 1.42419
+    Cl(f) = 2.42433
+    Cl(r) = -1.00014
+
+forceCoeffs canard_7 write:
+    Cm    = 2.07266
+    Cd    = 0.281471
+    Cl    = 1.42419
+    Cl(f) = 2.78475
+    Cl(r) = -1.36056
+
+forceCoeffs canard_8 write:
+    Cm    = 2.43308
+    Cd    = 0.281471
+    Cl    = 1.42419
+    Cl(f) = 3.14517
+    Cl(r) = -1.72099
+
+forceCoeffs canard_9 write:
+    Cm    = 2.7935
+    Cd    = 0.281471
+    Cl    = 1.42419
+    Cl(f) = 3.5056
+    Cl(r) = -2.08141
+
+forceCoeffs canard_10 write:
+    Cm    = 3.15393
+    Cd    = 0.281471
+    Cl    = 1.42419
+    Cl(f) = 3.86602
+    Cl(r) = -2.44184
+
+forceCoeffs canard_11 write:
+    Cm    = 3.51435
+    Cd    = 0.281471
+    Cl    = 1.42419
+    Cl(f) = 4.22645
+    Cl(r) = -2.80226
+
+Time = 10s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0139913, Final residual = 0.000808127, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00337055, Final residual = 0.000204223, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.110208, Final residual = 0.00647875, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.183125, Final residual = 0.0096444, No Iterations 3
+time step continuity errors : sum local = 0.0011798, global = -1.53585e-05, cumulative = -3.81986e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0493898, Final residual = 0.00162594, No Iterations 2
+bounding nuTilda, min: -0.00793194 max: 0.0667752 average: 0.0161025
+ExecutionTime = 240.855 s  ClockTime = 252 s
+
+forceCoeffs canard_1 write:
+    Cm    = 1.11347
+    Cd    = -1.39699
+    Cl    = -0.889897
+    Cl(f) = 0.668524
+    Cl(r) = -1.55842
+
+forceCoeffs canard_2 write:
+    Cm    = 0.728116
+    Cd    = -1.39699
+    Cl    = -0.889897
+    Cl(f) = 0.283168
+    Cl(r) = -1.17306
+
+forceCoeffs canard_3 write:
+    Cm    = 0.34276
+    Cd    = -1.39699
+    Cl    = -0.889897
+    Cl(f) = -0.102188
+    Cl(r) = -0.787709
+
+forceCoeffs canard_4 write:
+    Cm    = -0.0425958
+    Cd    = -1.39699
+    Cl    = -0.889897
+    Cl(f) = -0.487544
+    Cl(r) = -0.402353
+
+forceCoeffs canard_5 write:
+    Cm    = -0.427952
+    Cd    = -1.39699
+    Cl    = -0.889897
+    Cl(f) = -0.8729
+    Cl(r) = -0.0169965
+
+forceCoeffs canard_6 write:
+    Cm    = -0.813308
+    Cd    = -1.39699
+    Cl    = -0.889897
+    Cl(f) = -1.25826
+    Cl(r) = 0.36836
+
+forceCoeffs canard_7 write:
+    Cm    = -1.19866
+    Cd    = -1.39699
+    Cl    = -0.889897
+    Cl(f) = -1.64361
+    Cl(r) = 0.753716
+
+forceCoeffs canard_8 write:
+    Cm    = -1.58402
+    Cd    = -1.39699
+    Cl    = -0.889897
+    Cl(f) = -2.02897
+    Cl(r) = 1.13907
+
+forceCoeffs canard_9 write:
+    Cm    = -1.96938
+    Cd    = -1.39699
+    Cl    = -0.889897
+    Cl(f) = -2.41432
+    Cl(r) = 1.52443
+
+forceCoeffs canard_10 write:
+    Cm    = -2.35473
+    Cd    = -1.39699
+    Cl    = -0.889897
+    Cl(f) = -2.79968
+    Cl(r) = 1.90978
+
+forceCoeffs canard_11 write:
+    Cm    = -2.74009
+    Cd    = -1.39699
+    Cl    = -0.889897
+    Cl(f) = -3.18504
+    Cl(r) = 2.29514
+
+Time = 11s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0122044, Final residual = 0.000628044, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00412357, Final residual = 0.000260351, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.078106, Final residual = 0.00431413, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0768743, Final residual = 0.00512529, No Iterations 3
+time step continuity errors : sum local = 0.00152043, global = 4.74527e-05, cumulative = 9.25412e-06
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0456706, Final residual = 0.00163052, No Iterations 2
+bounding nuTilda, min: -0.00997093 max: 0.0667752 average: 0.015926
+ExecutionTime = 257.204 s  ClockTime = 268 s
+
+forceCoeffs canard_1 write:
+    Cm    = 0.50014
+    Cd    = -0.703916
+    Cl    = -0.0785957
+    Cl(f) = 0.460842
+    Cl(r) = -0.539438
+
+forceCoeffs canard_2 write:
+    Cm    = 0.38997
+    Cd    = -0.703916
+    Cl    = -0.0785957
+    Cl(f) = 0.350672
+    Cl(r) = -0.429268
+
+forceCoeffs canard_3 write:
+    Cm    = 0.2798
+    Cd    = -0.703916
+    Cl    = -0.0785957
+    Cl(f) = 0.240502
+    Cl(r) = -0.319097
+
+forceCoeffs canard_4 write:
+    Cm    = 0.169629
+    Cd    = -0.703916
+    Cl    = -0.0785957
+    Cl(f) = 0.130331
+    Cl(r) = -0.208927
+
+forceCoeffs canard_5 write:
+    Cm    = 0.059459
+    Cd    = -0.703916
+    Cl    = -0.0785957
+    Cl(f) = 0.0201612
+    Cl(r) = -0.0987569
+
+forceCoeffs canard_6 write:
+    Cm    = -0.0507112
+    Cd    = -0.703916
+    Cl    = -0.0785957
+    Cl(f) = -0.0900091
+    Cl(r) = 0.0114134
+
+forceCoeffs canard_7 write:
+    Cm    = -0.160882
+    Cd    = -0.703916
+    Cl    = -0.0785957
+    Cl(f) = -0.200179
+    Cl(r) = 0.121584
+
+forceCoeffs canard_8 write:
+    Cm    = -0.271052
+    Cd    = -0.703916
+    Cl    = -0.0785957
+    Cl(f) = -0.31035
+    Cl(r) = 0.231754
+
+forceCoeffs canard_9 write:
+    Cm    = -0.381222
+    Cd    = -0.703916
+    Cl    = -0.0785957
+    Cl(f) = -0.42052
+    Cl(r) = 0.341924
+
+forceCoeffs canard_10 write:
+    Cm    = -0.491392
+    Cd    = -0.703916
+    Cl    = -0.0785957
+    Cl(f) = -0.53069
+    Cl(r) = 0.452094
+
+forceCoeffs canard_11 write:
+    Cm    = -0.601563
+    Cd    = -0.703916
+    Cl    = -0.0785957
+    Cl(f) = -0.64086
+    Cl(r) = 0.562265
+
+Time = 12s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0123353, Final residual = 0.000620662, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00456506, Final residual = 0.000285225, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0615014, Final residual = 0.0033388, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0785734, Final residual = 0.00406629, No Iterations 3
+time step continuity errors : sum local = 0.00123781, global = 7.41136e-05, cumulative = 8.33677e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0435404, Final residual = 0.00165883, No Iterations 2
+bounding nuTilda, min: -0.00836439 max: 0.0667752 average: 0.015773
+ExecutionTime = 271.846 s  ClockTime = 283 s
+
+forceCoeffs canard_1 write:
+    Cm    = -0.6804
+    Cd    = 0.785779
+    Cl    = 1.84172
+    Cl(f) = 0.240462
+    Cl(r) = 1.60126
+
+forceCoeffs canard_2 write:
+    Cm    = -0.158992
+    Cd    = 0.785779
+    Cl    = 1.84172
+    Cl(f) = 0.761871
+    Cl(r) = 1.07985
+
+forceCoeffs canard_3 write:
+    Cm    = 0.362417
+    Cd    = 0.785779
+    Cl    = 1.84172
+    Cl(f) = 1.28328
+    Cl(r) = 0.558446
+
+forceCoeffs canard_4 write:
+    Cm    = 0.883825
+    Cd    = 0.785779
+    Cl    = 1.84172
+    Cl(f) = 1.80469
+    Cl(r) = 0.0370371
+
+forceCoeffs canard_5 write:
+    Cm    = 1.40523
+    Cd    = 0.785779
+    Cl    = 1.84172
+    Cl(f) = 2.3261
+    Cl(r) = -0.484371
+
+forceCoeffs canard_6 write:
+    Cm    = 1.92664
+    Cd    = 0.785779
+    Cl    = 1.84172
+    Cl(f) = 2.8475
+    Cl(r) = -1.00578
+
+forceCoeffs canard_7 write:
+    Cm    = 2.44805
+    Cd    = 0.785779
+    Cl    = 1.84172
+    Cl(f) = 3.36891
+    Cl(r) = -1.52719
+
+forceCoeffs canard_8 write:
+    Cm    = 2.96946
+    Cd    = 0.785779
+    Cl    = 1.84172
+    Cl(f) = 3.89032
+    Cl(r) = -2.0486
+
+forceCoeffs canard_9 write:
+    Cm    = 3.49087
+    Cd    = 0.785779
+    Cl    = 1.84172
+    Cl(f) = 4.41173
+    Cl(r) = -2.57001
+
+forceCoeffs canard_10 write:
+    Cm    = 4.01228
+    Cd    = 0.785779
+    Cl    = 1.84172
+    Cl(f) = 4.93314
+    Cl(r) = -3.09141
+
+forceCoeffs canard_11 write:
+    Cm    = 4.53369
+    Cd    = 0.785779
+    Cl    = 1.84172
+    Cl(f) = 5.45455
+    Cl(r) = -3.61282
+
+Time = 13s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0106728, Final residual = 0.000548928, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00487435, Final residual = 0.000292578, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0606424, Final residual = 0.00339788, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0909512, Final residual = 0.00856541, No Iterations 2
+time step continuity errors : sum local = 0.00164502, global = -5.49814e-05, cumulative = 2.83863e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0412246, Final residual = 0.00162887, No Iterations 2
+bounding nuTilda, min: -0.00971624 max: 0.0667752 average: 0.015637
+ExecutionTime = 285.628 s  ClockTime = 296 s
+
+forceCoeffs canard_1 write:
+    Cm    = -1.24104
+    Cd    = 1.54292
+    Cl    = 2.87793
+    Cl(f) = 0.197921
+    Cl(r) = 2.68001
+
+forceCoeffs canard_2 write:
+    Cm    = -0.38496
+    Cd    = 1.54292
+    Cl    = 2.87793
+    Cl(f) = 1.05401
+    Cl(r) = 1.82393
+
+forceCoeffs canard_3 write:
+    Cm    = 0.471124
+    Cd    = 1.54292
+    Cl    = 2.87793
+    Cl(f) = 1.91009
+    Cl(r) = 0.967842
+
+forceCoeffs canard_4 write:
+    Cm    = 1.32721
+    Cd    = 1.54292
+    Cl    = 2.87793
+    Cl(f) = 2.76618
+    Cl(r) = 0.111757
+
+forceCoeffs canard_5 write:
+    Cm    = 2.18329
+    Cd    = 1.54292
+    Cl    = 2.87793
+    Cl(f) = 3.62226
+    Cl(r) = -0.744327
+
+forceCoeffs canard_6 write:
+    Cm    = 3.03938
+    Cd    = 1.54292
+    Cl    = 2.87793
+    Cl(f) = 4.47834
+    Cl(r) = -1.60041
+
+forceCoeffs canard_7 write:
+    Cm    = 3.89546
+    Cd    = 1.54292
+    Cl    = 2.87793
+    Cl(f) = 5.33443
+    Cl(r) = -2.4565
+
+forceCoeffs canard_8 write:
+    Cm    = 4.75155
+    Cd    = 1.54292
+    Cl    = 2.87793
+    Cl(f) = 6.19051
+    Cl(r) = -3.31258
+
+forceCoeffs canard_9 write:
+    Cm    = 5.60763
+    Cd    = 1.54292
+    Cl    = 2.87793
+    Cl(f) = 7.0466
+    Cl(r) = -4.16867
+
+forceCoeffs canard_10 write:
+    Cm    = 6.46372
+    Cd    = 1.54292
+    Cl    = 2.87793
+    Cl(f) = 7.90268
+    Cl(r) = -5.02475
+
+forceCoeffs canard_11 write:
+    Cm    = 7.3198
+    Cd    = 1.54292
+    Cl    = 2.87793
+    Cl(f) = 8.75877
+    Cl(r) = -5.88084
+
+Time = 14s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00829587, Final residual = 0.000443985, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00406987, Final residual = 0.000247386, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0571721, Final residual = 0.00312326, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.191122, Final residual = 0.0117167, No Iterations 3
+time step continuity errors : sum local = 0.00105212, global = 3.59534e-06, cumulative = 3.19816e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0402624, Final residual = 0.00159779, No Iterations 2
+bounding nuTilda, min: -0.00839268 max: 0.0667752 average: 0.0155243
+ExecutionTime = 299.614 s  ClockTime = 310 s
+
+forceCoeffs canard_1 write:
+    Cm    = -1.03635
+    Cd    = 1.36348
+    Cl    = 2.73598
+    Cl(f) = 0.331642
+    Cl(r) = 2.40434
+
+forceCoeffs canard_2 write:
+    Cm    = -0.236043
+    Cd    = 1.36348
+    Cl    = 2.73598
+    Cl(f) = 1.13195
+    Cl(r) = 1.60403
+
+forceCoeffs canard_3 write:
+    Cm    = 0.564263
+    Cd    = 1.36348
+    Cl    = 2.73598
+    Cl(f) = 1.93226
+    Cl(r) = 0.803728
+
+forceCoeffs canard_4 write:
+    Cm    = 1.36457
+    Cd    = 1.36348
+    Cl    = 2.73598
+    Cl(f) = 2.73256
+    Cl(r) = 0.00342175
+
+forceCoeffs canard_5 write:
+    Cm    = 2.16488
+    Cd    = 1.36348
+    Cl    = 2.73598
+    Cl(f) = 3.53287
+    Cl(r) = -0.796885
+
+forceCoeffs canard_6 write:
+    Cm    = 2.96518
+    Cd    = 1.36348
+    Cl    = 2.73598
+    Cl(f) = 4.33317
+    Cl(r) = -1.59719
+
+forceCoeffs canard_7 write:
+    Cm    = 3.76549
+    Cd    = 1.36348
+    Cl    = 2.73598
+    Cl(f) = 5.13348
+    Cl(r) = -2.3975
+
+forceCoeffs canard_8 write:
+    Cm    = 4.5658
+    Cd    = 1.36348
+    Cl    = 2.73598
+    Cl(f) = 5.93379
+    Cl(r) = -3.1978
+
+forceCoeffs canard_9 write:
+    Cm    = 5.3661
+    Cd    = 1.36348
+    Cl    = 2.73598
+    Cl(f) = 6.73409
+    Cl(r) = -3.99811
+
+forceCoeffs canard_10 write:
+    Cm    = 6.16641
+    Cd    = 1.36348
+    Cl    = 2.73598
+    Cl(f) = 7.5344
+    Cl(r) = -4.79842
+
+forceCoeffs canard_11 write:
+    Cm    = 6.96672
+    Cd    = 1.36348
+    Cl    = 2.73598
+    Cl(f) = 8.33471
+    Cl(r) = -5.59872
+
+Time = 15s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00712308, Final residual = 0.000389507, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00277507, Final residual = 0.000166576, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.051741, Final residual = 0.00273109, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.260491, Final residual = 0.0144528, No Iterations 3
+time step continuity errors : sum local = 0.000973609, global = -3.88058e-05, cumulative = -6.82415e-06
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0386689, Final residual = 0.00154509, No Iterations 2
+bounding nuTilda, min: -0.00982275 max: 0.0667752 average: 0.015423
+ExecutionTime = 314.129 s  ClockTime = 325 s
+
+forceCoeffs canard_1 write:
+    Cm    = -0.51996
+    Cd    = 0.741657
+    Cl    = 1.98937
+    Cl(f) = 0.474727
+    Cl(r) = 1.51465
+
+forceCoeffs canard_2 write:
+    Cm    = 0.0292008
+    Cd    = 0.741657
+    Cl    = 1.98937
+    Cl(f) = 1.02389
+    Cl(r) = 0.965486
+
+forceCoeffs canard_3 write:
+    Cm    = 0.578362
+    Cd    = 0.741657
+    Cl    = 1.98937
+    Cl(f) = 1.57305
+    Cl(r) = 0.416325
+
+forceCoeffs canard_4 write:
+    Cm    = 1.12752
+    Cd    = 0.741657
+    Cl    = 1.98937
+    Cl(f) = 2.12221
+    Cl(r) = -0.132836
+
+forceCoeffs canard_5 write:
+    Cm    = 1.67668
+    Cd    = 0.741657
+    Cl    = 1.98937
+    Cl(f) = 2.67137
+    Cl(r) = -0.681997
+
+forceCoeffs canard_6 write:
+    Cm    = 2.22585
+    Cd    = 0.741657
+    Cl    = 1.98937
+    Cl(f) = 3.22053
+    Cl(r) = -1.23116
+
+forceCoeffs canard_7 write:
+    Cm    = 2.77501
+    Cd    = 0.741657
+    Cl    = 1.98937
+    Cl(f) = 3.76969
+    Cl(r) = -1.78032
+
+forceCoeffs canard_8 write:
+    Cm    = 3.32417
+    Cd    = 0.741657
+    Cl    = 1.98937
+    Cl(f) = 4.31886
+    Cl(r) = -2.32948
+
+forceCoeffs canard_9 write:
+    Cm    = 3.87333
+    Cd    = 0.741657
+    Cl    = 1.98937
+    Cl(f) = 4.86802
+    Cl(r) = -2.87864
+
+forceCoeffs canard_10 write:
+    Cm    = 4.42249
+    Cd    = 0.741657
+    Cl    = 1.98937
+    Cl(f) = 5.41718
+    Cl(r) = -3.4278
+
+forceCoeffs canard_11 write:
+    Cm    = 4.97165
+    Cd    = 0.741657
+    Cl    = 1.98937
+    Cl(f) = 5.96634
+    Cl(r) = -3.97696
+
+Time = 16s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00710357, Final residual = 0.000388032, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00271398, Final residual = 0.000155652, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0553913, Final residual = 0.00304479, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.107405, Final residual = 0.0101456, No Iterations 2
+time step continuity errors : sum local = 0.00128848, global = -2.43238e-05, cumulative = -3.1148e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0381003, Final residual = 0.00151067, No Iterations 2
+bounding nuTilda, min: -0.00852957 max: 0.0667752 average: 0.0153357
+ExecutionTime = 327.735 s  ClockTime = 339 s
+
+forceCoeffs canard_1 write:
+    Cm    = -0.235424
+    Cd    = 0.376878
+    Cl    = 1.53756
+    Cl(f) = 0.533355
+    Cl(r) = 1.0042
+
+forceCoeffs canard_2 write:
+    Cm    = 0.163266
+    Cd    = 0.376878
+    Cl    = 1.53756
+    Cl(f) = 0.932045
+    Cl(r) = 0.605513
+
+forceCoeffs canard_3 write:
+    Cm    = 0.561955
+    Cd    = 0.376878
+    Cl    = 1.53756
+    Cl(f) = 1.33073
+    Cl(r) = 0.206824
+
+forceCoeffs canard_4 write:
+    Cm    = 0.960644
+    Cd    = 0.376878
+    Cl    = 1.53756
+    Cl(f) = 1.72942
+    Cl(r) = -0.191865
+
+forceCoeffs canard_5 write:
+    Cm    = 1.35933
+    Cd    = 0.376878
+    Cl    = 1.53756
+    Cl(f) = 2.12811
+    Cl(r) = -0.590555
+
+forceCoeffs canard_6 write:
+    Cm    = 1.75802
+    Cd    = 0.376878
+    Cl    = 1.53756
+    Cl(f) = 2.5268
+    Cl(r) = -0.989244
+
+forceCoeffs canard_7 write:
+    Cm    = 2.15671
+    Cd    = 0.376878
+    Cl    = 1.53756
+    Cl(f) = 2.92549
+    Cl(r) = -1.38793
+
+forceCoeffs canard_8 write:
+    Cm    = 2.5554
+    Cd    = 0.376878
+    Cl    = 1.53756
+    Cl(f) = 3.32418
+    Cl(r) = -1.78662
+
+forceCoeffs canard_9 write:
+    Cm    = 2.95409
+    Cd    = 0.376878
+    Cl    = 1.53756
+    Cl(f) = 3.72287
+    Cl(r) = -2.18531
+
+forceCoeffs canard_10 write:
+    Cm    = 3.35278
+    Cd    = 0.376878
+    Cl    = 1.53756
+    Cl(f) = 4.12156
+    Cl(r) = -2.584
+
+forceCoeffs canard_11 write:
+    Cm    = 3.75147
+    Cd    = 0.376878
+    Cl    = 1.53756
+    Cl(f) = 4.52025
+    Cl(r) = -2.98269
+
+Time = 17s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00672628, Final residual = 0.000355584, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00303412, Final residual = 0.000172013, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0511563, Final residual = 0.00273906, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0639353, Final residual = 0.00365891, No Iterations 3
+time step continuity errors : sum local = 0.000730583, global = -6.88324e-06, cumulative = -3.80312e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0369605, Final residual = 0.00146918, No Iterations 2
+bounding nuTilda, min: -0.00992887 max: 0.0667752 average: 0.0152543
+ExecutionTime = 342.317 s  ClockTime = 353 s
+
+forceCoeffs canard_1 write:
+    Cm    = -0.242634
+    Cd    = 0.347623
+    Cl    = 1.48445
+    Cl(f) = 0.49959
+    Cl(r) = 0.984857
+
+forceCoeffs canard_2 write:
+    Cm    = 0.140155
+    Cd    = 0.347623
+    Cl    = 1.48445
+    Cl(f) = 0.882378
+    Cl(r) = 0.602069
+
+forceCoeffs canard_3 write:
+    Cm    = 0.522943
+    Cd    = 0.347623
+    Cl    = 1.48445
+    Cl(f) = 1.26517
+    Cl(r) = 0.219281
+
+forceCoeffs canard_4 write:
+    Cm    = 0.905731
+    Cd    = 0.347623
+    Cl    = 1.48445
+    Cl(f) = 1.64795
+    Cl(r) = -0.163508
+
+forceCoeffs canard_5 write:
+    Cm    = 1.28852
+    Cd    = 0.347623
+    Cl    = 1.48445
+    Cl(f) = 2.03074
+    Cl(r) = -0.546296
+
+forceCoeffs canard_6 write:
+    Cm    = 1.67131
+    Cd    = 0.347623
+    Cl    = 1.48445
+    Cl(f) = 2.41353
+    Cl(r) = -0.929084
+
+forceCoeffs canard_7 write:
+    Cm    = 2.0541
+    Cd    = 0.347623
+    Cl    = 1.48445
+    Cl(f) = 2.79632
+    Cl(r) = -1.31187
+
+forceCoeffs canard_8 write:
+    Cm    = 2.43688
+    Cd    = 0.347623
+    Cl    = 1.48445
+    Cl(f) = 3.17911
+    Cl(r) = -1.69466
+
+forceCoeffs canard_9 write:
+    Cm    = 2.81967
+    Cd    = 0.347623
+    Cl    = 1.48445
+    Cl(f) = 3.5619
+    Cl(r) = -2.07745
+
+forceCoeffs canard_10 write:
+    Cm    = 3.20246
+    Cd    = 0.347623
+    Cl    = 1.48445
+    Cl(f) = 3.94468
+    Cl(r) = -2.46024
+
+forceCoeffs canard_11 write:
+    Cm    = 3.58525
+    Cd    = 0.347623
+    Cl    = 1.48445
+    Cl(f) = 4.32747
+    Cl(r) = -2.84303
+
+Time = 18s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00605651, Final residual = 0.000298067, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00289209, Final residual = 0.00016224, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0407378, Final residual = 0.00203408, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0525391, Final residual = 0.00286194, No Iterations 3
+time step continuity errors : sum local = 0.000688662, global = 1.60492e-05, cumulative = -2.1982e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0367539, Final residual = 0.00144786, No Iterations 2
+bounding nuTilda, min: -0.00854394 max: 0.0667752 average: 0.0151828
+ExecutionTime = 357.483 s  ClockTime = 368 s
+
+forceCoeffs canard_1 write:
+    Cm    = -0.410675
+    Cd    = 0.546296
+    Cl    = 1.73216
+    Cl(f) = 0.455406
+    Cl(r) = 1.27676
+
+forceCoeffs canard_2 write:
+    Cm    = 0.0544381
+    Cd    = 0.546296
+    Cl    = 1.73216
+    Cl(f) = 0.920519
+    Cl(r) = 0.811643
+
+forceCoeffs canard_3 write:
+    Cm    = 0.519551
+    Cd    = 0.546296
+    Cl    = 1.73216
+    Cl(f) = 1.38563
+    Cl(r) = 0.346529
+
+forceCoeffs canard_4 write:
+    Cm    = 0.984664
+    Cd    = 0.546296
+    Cl    = 1.73216
+    Cl(f) = 1.85075
+    Cl(r) = -0.118584
+
+forceCoeffs canard_5 write:
+    Cm    = 1.44978
+    Cd    = 0.546296
+    Cl    = 1.73216
+    Cl(f) = 2.31586
+    Cl(r) = -0.583697
+
+forceCoeffs canard_6 write:
+    Cm    = 1.91489
+    Cd    = 0.546296
+    Cl    = 1.73216
+    Cl(f) = 2.78097
+    Cl(r) = -1.04881
+
+forceCoeffs canard_7 write:
+    Cm    = 2.38
+    Cd    = 0.546296
+    Cl    = 1.73216
+    Cl(f) = 3.24608
+    Cl(r) = -1.51392
+
+forceCoeffs canard_8 write:
+    Cm    = 2.84512
+    Cd    = 0.546296
+    Cl    = 1.73216
+    Cl(f) = 3.7112
+    Cl(r) = -1.97904
+
+forceCoeffs canard_9 write:
+    Cm    = 3.31023
+    Cd    = 0.546296
+    Cl    = 1.73216
+    Cl(f) = 4.17631
+    Cl(r) = -2.44415
+
+forceCoeffs canard_10 write:
+    Cm    = 3.77534
+    Cd    = 0.546296
+    Cl    = 1.73216
+    Cl(f) = 4.64142
+    Cl(r) = -2.90926
+
+forceCoeffs canard_11 write:
+    Cm    = 4.24046
+    Cd    = 0.546296
+    Cl    = 1.73216
+    Cl(f) = 5.10654
+    Cl(r) = -3.37438
+
+Time = 19s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00547404, Final residual = 0.000272401, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00276151, Final residual = 0.00015892, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0352619, Final residual = 0.0017727, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0495893, Final residual = 0.00449359, No Iterations 2
+time step continuity errors : sum local = 0.000975371, global = 5.23993e-05, cumulative = 3.04172e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.035905, Final residual = 0.00141691, No Iterations 2
+bounding nuTilda, min: -0.00996223 max: 0.0667752 average: 0.0151161
+ExecutionTime = 371.861 s  ClockTime = 383 s
+
+forceCoeffs canard_1 write:
+    Cm    = -0.508253
+    Cd    = 0.677139
+    Cl    = 1.89863
+    Cl(f) = 0.441061
+    Cl(r) = 1.45757
+
+forceCoeffs canard_2 write:
+    Cm    = 0.0118333
+    Cd    = 0.677139
+    Cl    = 1.89863
+    Cl(f) = 0.961147
+    Cl(r) = 0.93748
+
+forceCoeffs canard_3 write:
+    Cm    = 0.53192
+    Cd    = 0.677139
+    Cl    = 1.89863
+    Cl(f) = 1.48123
+    Cl(r) = 0.417394
+
+forceCoeffs canard_4 write:
+    Cm    = 1.05201
+    Cd    = 0.677139
+    Cl    = 1.89863
+    Cl(f) = 2.00132
+    Cl(r) = -0.102692
+
+forceCoeffs canard_5 write:
+    Cm    = 1.57209
+    Cd    = 0.677139
+    Cl    = 1.89863
+    Cl(f) = 2.52141
+    Cl(r) = -0.622779
+
+forceCoeffs canard_6 write:
+    Cm    = 2.09218
+    Cd    = 0.677139
+    Cl    = 1.89863
+    Cl(f) = 3.04149
+    Cl(r) = -1.14286
+
+forceCoeffs canard_7 write:
+    Cm    = 2.61226
+    Cd    = 0.677139
+    Cl    = 1.89863
+    Cl(f) = 3.56158
+    Cl(r) = -1.66295
+
+forceCoeffs canard_8 write:
+    Cm    = 3.13235
+    Cd    = 0.677139
+    Cl    = 1.89863
+    Cl(f) = 4.08166
+    Cl(r) = -2.18304
+
+forceCoeffs canard_9 write:
+    Cm    = 3.65244
+    Cd    = 0.677139
+    Cl    = 1.89863
+    Cl(f) = 4.60175
+    Cl(r) = -2.70312
+
+forceCoeffs canard_10 write:
+    Cm    = 4.17252
+    Cd    = 0.677139
+    Cl    = 1.89863
+    Cl(f) = 5.12184
+    Cl(r) = -3.22321
+
+forceCoeffs canard_11 write:
+    Cm    = 4.69261
+    Cd    = 0.677139
+    Cl    = 1.89863
+    Cl(f) = 5.64192
+    Cl(r) = -3.7433
+
+Time = 20s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00472213, Final residual = 0.000237072, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00256589, Final residual = 0.000143998, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0315019, Final residual = 0.00161059, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.056698, Final residual = 0.00269712, No Iterations 3
+time step continuity errors : sum local = 0.0004675, global = 3.07106e-05, cumulative = 6.11278e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0359012, Final residual = 0.00140314, No Iterations 2
+bounding nuTilda, min: -0.00850223 max: 0.0667752 average: 0.0150571
+ExecutionTime = 397.607 s  ClockTime = 409 s
+
+forceCoeffs canard_1 write:
+    Cm    = -0.512139
+    Cd    = 0.713891
+    Cl    = 1.9546
+    Cl(f) = 0.465159
+    Cl(r) = 1.48944
+
+forceCoeffs canard_2 write:
+    Cm    = 0.025481
+    Cd    = 0.713891
+    Cl    = 1.9546
+    Cl(f) = 1.00278
+    Cl(r) = 0.951817
+
+forceCoeffs canard_3 write:
+    Cm    = 0.563101
+    Cd    = 0.713891
+    Cl    = 1.9546
+    Cl(f) = 1.5404
+    Cl(r) = 0.414197
+
+forceCoeffs canard_4 write:
+    Cm    = 1.10072
+    Cd    = 0.713891
+    Cl    = 1.9546
+    Cl(f) = 2.07802
+    Cl(r) = -0.123422
+
+forceCoeffs canard_5 write:
+    Cm    = 1.63834
+    Cd    = 0.713891
+    Cl    = 1.9546
+    Cl(f) = 2.61564
+    Cl(r) = -0.661042
+
+forceCoeffs canard_6 write:
+    Cm    = 2.17596
+    Cd    = 0.713891
+    Cl    = 1.9546
+    Cl(f) = 3.15326
+    Cl(r) = -1.19866
+
+forceCoeffs canard_7 write:
+    Cm    = 2.71358
+    Cd    = 0.713891
+    Cl    = 1.9546
+    Cl(f) = 3.69088
+    Cl(r) = -1.73628
+
+forceCoeffs canard_8 write:
+    Cm    = 3.2512
+    Cd    = 0.713891
+    Cl    = 1.9546
+    Cl(f) = 4.2285
+    Cl(r) = -2.2739
+
+forceCoeffs canard_9 write:
+    Cm    = 3.78882
+    Cd    = 0.713891
+    Cl    = 1.9546
+    Cl(f) = 4.76612
+    Cl(r) = -2.81152
+
+forceCoeffs canard_10 write:
+    Cm    = 4.32644
+    Cd    = 0.713891
+    Cl    = 1.9546
+    Cl(f) = 5.30374
+    Cl(r) = -3.34914
+
+forceCoeffs canard_11 write:
+    Cm    = 4.86406
+    Cd    = 0.713891
+    Cl    = 1.9546
+    Cl(f) = 5.84136
+    Cl(r) = -3.88676
+
+Time = 21s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00402731, Final residual = 0.000205636, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00227622, Final residual = 0.00012374, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0296371, Final residual = 0.00149849, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0647361, Final residual = 0.00314421, No Iterations 3
+time step continuity errors : sum local = 0.000438295, global = 1.63749e-05, cumulative = 7.75027e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0351874, Final residual = 0.00138029, No Iterations 2
+bounding nuTilda, min: -0.00995986 max: 0.0667752 average: 0.0150002
+ExecutionTime = 416.124 s  ClockTime = 427 s
+
+forceCoeffs canard_1 write:
+    Cm    = -0.449963
+    Cd    = 0.662323
+    Cl    = 1.89801
+    Cl(f) = 0.499043
+    Cl(r) = 1.39897
+
+forceCoeffs canard_2 write:
+    Cm    = 0.0680405
+    Cd    = 0.662323
+    Cl    = 1.89801
+    Cl(f) = 1.01705
+    Cl(r) = 0.880965
+
+forceCoeffs canard_3 write:
+    Cm    = 0.586044
+    Cd    = 0.662323
+    Cl    = 1.89801
+    Cl(f) = 1.53505
+    Cl(r) = 0.362962
+
+forceCoeffs canard_4 write:
+    Cm    = 1.10405
+    Cd    = 0.662323
+    Cl    = 1.89801
+    Cl(f) = 2.05305
+    Cl(r) = -0.155041
+
+forceCoeffs canard_5 write:
+    Cm    = 1.62205
+    Cd    = 0.662323
+    Cl    = 1.89801
+    Cl(f) = 2.57106
+    Cl(r) = -0.673045
+
+forceCoeffs canard_6 write:
+    Cm    = 2.14005
+    Cd    = 0.662323
+    Cl    = 1.89801
+    Cl(f) = 3.08906
+    Cl(r) = -1.19105
+
+forceCoeffs canard_7 write:
+    Cm    = 2.65806
+    Cd    = 0.662323
+    Cl    = 1.89801
+    Cl(f) = 3.60706
+    Cl(r) = -1.70905
+
+forceCoeffs canard_8 write:
+    Cm    = 3.17606
+    Cd    = 0.662323
+    Cl    = 1.89801
+    Cl(f) = 4.12507
+    Cl(r) = -2.22705
+
+forceCoeffs canard_9 write:
+    Cm    = 3.69406
+    Cd    = 0.662323
+    Cl    = 1.89801
+    Cl(f) = 4.64307
+    Cl(r) = -2.74506
+
+forceCoeffs canard_10 write:
+    Cm    = 4.21207
+    Cd    = 0.662323
+    Cl    = 1.89801
+    Cl(f) = 5.16107
+    Cl(r) = -3.26306
+
+forceCoeffs canard_11 write:
+    Cm    = 4.73007
+    Cd    = 0.662323
+    Cl    = 1.89801
+    Cl(f) = 5.67908
+    Cl(r) = -3.78106
+
+Time = 22s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00383543, Final residual = 0.000201497, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00212151, Final residual = 0.000116629, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0299663, Final residual = 0.00153107, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.055859, Final residual = 0.00521057, No Iterations 2
+time step continuity errors : sum local = 0.000769401, global = -5.39127e-05, cumulative = 2.359e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0352743, Final residual = 0.00137294, No Iterations 2
+bounding nuTilda, min: -0.00845821 max: 0.0667752 average: 0.0149491
+ExecutionTime = 429.493 s  ClockTime = 440 s
+
+forceCoeffs canard_1 write:
+    Cm    = -0.403956
+    Cd    = 0.619923
+    Cl    = 1.85361
+    Cl(f) = 0.522849
+    Cl(r) = 1.33076
+
+forceCoeffs canard_2 write:
+    Cm    = 0.098401
+    Cd    = 0.619923
+    Cl    = 1.85361
+    Cl(f) = 1.02521
+    Cl(r) = 0.828404
+
+forceCoeffs canard_3 write:
+    Cm    = 0.600758
+    Cd    = 0.619923
+    Cl    = 1.85361
+    Cl(f) = 1.52756
+    Cl(r) = 0.326047
+
+forceCoeffs canard_4 write:
+    Cm    = 1.10311
+    Cd    = 0.619923
+    Cl    = 1.85361
+    Cl(f) = 2.02992
+    Cl(r) = -0.176309
+
+forceCoeffs canard_5 write:
+    Cm    = 1.60547
+    Cd    = 0.619923
+    Cl    = 1.85361
+    Cl(f) = 2.53228
+    Cl(r) = -0.678666
+
+forceCoeffs canard_6 write:
+    Cm    = 2.10783
+    Cd    = 0.619923
+    Cl    = 1.85361
+    Cl(f) = 3.03463
+    Cl(r) = -1.18102
+
+forceCoeffs canard_7 write:
+    Cm    = 2.61018
+    Cd    = 0.619923
+    Cl    = 1.85361
+    Cl(f) = 3.53699
+    Cl(r) = -1.68338
+
+forceCoeffs canard_8 write:
+    Cm    = 3.11254
+    Cd    = 0.619923
+    Cl    = 1.85361
+    Cl(f) = 4.03935
+    Cl(r) = -2.18574
+
+forceCoeffs canard_9 write:
+    Cm    = 3.6149
+    Cd    = 0.619923
+    Cl    = 1.85361
+    Cl(f) = 4.5417
+    Cl(r) = -2.68809
+
+forceCoeffs canard_10 write:
+    Cm    = 4.11725
+    Cd    = 0.619923
+    Cl    = 1.85361
+    Cl(f) = 5.04406
+    Cl(r) = -3.19045
+
+forceCoeffs canard_11 write:
+    Cm    = 4.61961
+    Cd    = 0.619923
+    Cl    = 1.85361
+    Cl(f) = 5.54641
+    Cl(r) = -3.69281
+
+Time = 23s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00378073, Final residual = 0.000194837, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00207596, Final residual = 0.000110729, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0291099, Final residual = 0.00145391, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.043086, Final residual = 0.00208707, No Iterations 3
+time step continuity errors : sum local = 0.000368601, global = -1.09067e-05, cumulative = 1.26833e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0347027, Final residual = 0.00135201, No Iterations 2
+bounding nuTilda, min: -0.00992595 max: 0.0667752 average: 0.0149003
+ExecutionTime = 443.297 s  ClockTime = 454 s
+
+forceCoeffs canard_1 write:
+    Cm    = -0.37741
+    Cd    = 0.599767
+    Cl    = 1.84149
+    Cl(f) = 0.543336
+    Cl(r) = 1.29816
+
+forceCoeffs canard_2 write:
+    Cm    = 0.11955
+    Cd    = 0.599767
+    Cl    = 1.84149
+    Cl(f) = 1.0403
+    Cl(r) = 0.801196
+
+forceCoeffs canard_3 write:
+    Cm    = 0.616511
+    Cd    = 0.599767
+    Cl    = 1.84149
+    Cl(f) = 1.53726
+    Cl(r) = 0.304235
+
+forceCoeffs canard_4 write:
+    Cm    = 1.11347
+    Cd    = 0.599767
+    Cl    = 1.84149
+    Cl(f) = 2.03422
+    Cl(r) = -0.192726
+
+forceCoeffs canard_5 write:
+    Cm    = 1.61043
+    Cd    = 0.599767
+    Cl    = 1.84149
+    Cl(f) = 2.53118
+    Cl(r) = -0.689686
+
+forceCoeffs canard_6 write:
+    Cm    = 2.10739
+    Cd    = 0.599767
+    Cl    = 1.84149
+    Cl(f) = 3.02814
+    Cl(r) = -1.18665
+
+forceCoeffs canard_7 write:
+    Cm    = 2.60435
+    Cd    = 0.599767
+    Cl    = 1.84149
+    Cl(f) = 3.5251
+    Cl(r) = -1.68361
+
+forceCoeffs canard_8 write:
+    Cm    = 3.10131
+    Cd    = 0.599767
+    Cl    = 1.84149
+    Cl(f) = 4.02206
+    Cl(r) = -2.18057
+
+forceCoeffs canard_9 write:
+    Cm    = 3.59828
+    Cd    = 0.599767
+    Cl    = 1.84149
+    Cl(f) = 4.51902
+    Cl(r) = -2.67753
+
+forceCoeffs canard_10 write:
+    Cm    = 4.09524
+    Cd    = 0.599767
+    Cl    = 1.84149
+    Cl(f) = 5.01598
+    Cl(r) = -3.17449
+
+forceCoeffs canard_11 write:
+    Cm    = 4.5922
+    Cd    = 0.599767
+    Cl    = 1.84149
+    Cl(f) = 5.51294
+    Cl(r) = -3.67145
+
+Time = 24s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00366101, Final residual = 0.000182795, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00218209, Final residual = 0.000111098, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0285133, Final residual = 0.00137464, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0320277, Final residual = 0.00317316, No Iterations 2
+time step continuity errors : sum local = 0.000654325, global = -1.84949e-05, cumulative = -5.81153e-06
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0348486, Final residual = 0.00134625, No Iterations 2
+bounding nuTilda, min: -0.00842235 max: 0.0667752 average: 0.0148581
+ExecutionTime = 459.574 s  ClockTime = 471 s
+
+forceCoeffs canard_1 write:
+    Cm    = -0.370545
+    Cd    = 0.598679
+    Cl    = 1.85212
+    Cl(f) = 0.555517
+    Cl(r) = 1.29661
+
+forceCoeffs canard_2 write:
+    Cm    = 0.128689
+    Cd    = 0.598679
+    Cl    = 1.85212
+    Cl(f) = 1.05475
+    Cl(r) = 0.797373
+
+forceCoeffs canard_3 write:
+    Cm    = 0.627922
+    Cd    = 0.598679
+    Cl    = 1.85212
+    Cl(f) = 1.55398
+    Cl(r) = 0.29814
+
+forceCoeffs canard_4 write:
+    Cm    = 1.12715
+    Cd    = 0.598679
+    Cl    = 1.85212
+    Cl(f) = 2.05322
+    Cl(r) = -0.201093
+
+forceCoeffs canard_5 write:
+    Cm    = 1.62639
+    Cd    = 0.598679
+    Cl    = 1.85212
+    Cl(f) = 2.55245
+    Cl(r) = -0.700326
+
+forceCoeffs canard_6 write:
+    Cm    = 2.12562
+    Cd    = 0.598679
+    Cl    = 1.85212
+    Cl(f) = 3.05168
+    Cl(r) = -1.19956
+
+forceCoeffs canard_7 write:
+    Cm    = 2.62485
+    Cd    = 0.598679
+    Cl    = 1.85212
+    Cl(f) = 3.55092
+    Cl(r) = -1.69879
+
+forceCoeffs canard_8 write:
+    Cm    = 3.12409
+    Cd    = 0.598679
+    Cl    = 1.85212
+    Cl(f) = 4.05015
+    Cl(r) = -2.19802
+
+forceCoeffs canard_9 write:
+    Cm    = 3.62332
+    Cd    = 0.598679
+    Cl    = 1.85212
+    Cl(f) = 4.54938
+    Cl(r) = -2.69726
+
+forceCoeffs canard_10 write:
+    Cm    = 4.12255
+    Cd    = 0.598679
+    Cl    = 1.85212
+    Cl(f) = 5.04861
+    Cl(r) = -3.19649
+
+forceCoeffs canard_11 write:
+    Cm    = 4.62179
+    Cd    = 0.598679
+    Cl    = 1.85212
+    Cl(f) = 5.54785
+    Cl(r) = -3.69572
+
+Time = 25s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00341367, Final residual = 0.000170021, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00218597, Final residual = 0.000112089, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0265729, Final residual = 0.00126353, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0306574, Final residual = 0.00297006, No Iterations 2
+time step continuity errors : sum local = 0.000616795, global = 1.77165e-05, cumulative = 1.19049e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0343076, Final residual = 0.00132954, No Iterations 2
+bounding nuTilda, min: -0.00986613 max: 0.0667752 average: 0.0148189
+ExecutionTime = 471.218 s  ClockTime = 482 s
+
+forceCoeffs canard_1 write:
+    Cm    = -0.356123
+    Cd    = 0.583579
+    Cl    = 1.83639
+    Cl(f) = 0.562071
+    Cl(r) = 1.27432
+
+forceCoeffs canard_2 write:
+    Cm    = 0.137555
+    Cd    = 0.583579
+    Cl    = 1.83639
+    Cl(f) = 1.05575
+    Cl(r) = 0.780639
+
+forceCoeffs canard_3 write:
+    Cm    = 0.631233
+    Cd    = 0.583579
+    Cl    = 1.83639
+    Cl(f) = 1.54943
+    Cl(r) = 0.286961
+
+forceCoeffs canard_4 write:
+    Cm    = 1.12491
+    Cd    = 0.583579
+    Cl    = 1.83639
+    Cl(f) = 2.04311
+    Cl(r) = -0.206717
+
+forceCoeffs canard_5 write:
+    Cm    = 1.61859
+    Cd    = 0.583579
+    Cl    = 1.83639
+    Cl(f) = 2.53678
+    Cl(r) = -0.700395
+
+forceCoeffs canard_6 write:
+    Cm    = 2.11227
+    Cd    = 0.583579
+    Cl    = 1.83639
+    Cl(f) = 3.03046
+    Cl(r) = -1.19407
+
+forceCoeffs canard_7 write:
+    Cm    = 2.60595
+    Cd    = 0.583579
+    Cl    = 1.83639
+    Cl(f) = 3.52414
+    Cl(r) = -1.68775
+
+forceCoeffs canard_8 write:
+    Cm    = 3.09962
+    Cd    = 0.583579
+    Cl    = 1.83639
+    Cl(f) = 4.01782
+    Cl(r) = -2.18143
+
+forceCoeffs canard_9 write:
+    Cm    = 3.5933
+    Cd    = 0.583579
+    Cl    = 1.83639
+    Cl(f) = 4.5115
+    Cl(r) = -2.67511
+
+forceCoeffs canard_10 write:
+    Cm    = 4.08698
+    Cd    = 0.583579
+    Cl    = 1.83639
+    Cl(f) = 5.00517
+    Cl(r) = -3.16879
+
+forceCoeffs canard_11 write:
+    Cm    = 4.58066
+    Cd    = 0.583579
+    Cl    = 1.83639
+    Cl(f) = 5.49885
+    Cl(r) = -3.66246
+
+Time = 26s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00311811, Final residual = 0.000154349, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00202716, Final residual = 0.000105999, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0227574, Final residual = 0.0010771, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0308212, Final residual = 0.00303191, No Iterations 2
+time step continuity errors : sum local = 0.000581608, global = 1.89921e-05, cumulative = 3.0897e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0345551, Final residual = 0.00132561, No Iterations 2
+bounding nuTilda, min: -0.00839697 max: 0.0667752 average: 0.0147856
+ExecutionTime = 483.9 s  ClockTime = 495 s
+
+forceCoeffs canard_1 write:
+    Cm    = -0.336959
+    Cd    = 0.560646
+    Cl    = 1.80172
+    Cl(f) = 0.563899
+    Cl(r) = 1.23782
+
+forceCoeffs canard_2 write:
+    Cm    = 0.145836
+    Cd    = 0.560646
+    Cl    = 1.80172
+    Cl(f) = 1.04669
+    Cl(r) = 0.755022
+
+forceCoeffs canard_3 write:
+    Cm    = 0.62863
+    Cd    = 0.560646
+    Cl    = 1.80172
+    Cl(f) = 1.52949
+    Cl(r) = 0.272228
+
+forceCoeffs canard_4 write:
+    Cm    = 1.11143
+    Cd    = 0.560646
+    Cl    = 1.80172
+    Cl(f) = 2.01228
+    Cl(r) = -0.210567
+
+forceCoeffs canard_5 write:
+    Cm    = 1.59422
+    Cd    = 0.560646
+    Cl    = 1.80172
+    Cl(f) = 2.49508
+    Cl(r) = -0.693362
+
+forceCoeffs canard_6 write:
+    Cm    = 2.07701
+    Cd    = 0.560646
+    Cl    = 1.80172
+    Cl(f) = 2.97787
+    Cl(r) = -1.17616
+
+forceCoeffs canard_7 write:
+    Cm    = 2.55981
+    Cd    = 0.560646
+    Cl    = 1.80172
+    Cl(f) = 3.46067
+    Cl(r) = -1.65895
+
+forceCoeffs canard_8 write:
+    Cm    = 3.0426
+    Cd    = 0.560646
+    Cl    = 1.80172
+    Cl(f) = 3.94346
+    Cl(r) = -2.14175
+
+forceCoeffs canard_9 write:
+    Cm    = 3.5254
+    Cd    = 0.560646
+    Cl    = 1.80172
+    Cl(f) = 4.42626
+    Cl(r) = -2.62454
+
+forceCoeffs canard_10 write:
+    Cm    = 4.00819
+    Cd    = 0.560646
+    Cl    = 1.80172
+    Cl(f) = 4.90905
+    Cl(r) = -3.10734
+
+forceCoeffs canard_11 write:
+    Cm    = 4.49099
+    Cd    = 0.560646
+    Cl    = 1.80172
+    Cl(f) = 5.39185
+    Cl(r) = -3.59013
+
+Time = 27s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00288853, Final residual = 0.000141124, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00191626, Final residual = 0.000100862, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0206521, Final residual = 0.0010058, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0303967, Final residual = 0.00292874, No Iterations 2
+time step continuity errors : sum local = 0.000512285, global = 1.27508e-05, cumulative = 4.36478e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0340609, Final residual = 0.00130809, No Iterations 2
+bounding nuTilda, min: -0.00981105 max: 0.0667752 average: 0.0147511
+ExecutionTime = 497.299 s  ClockTime = 508 s
+
+forceCoeffs canard_1 write:
+    Cm    = -0.32424
+    Cd    = 0.546642
+    Cl    = 1.77484
+    Cl(f) = 0.56318
+    Cl(r) = 1.21166
+
+forceCoeffs canard_2 write:
+    Cm    = 0.150613
+    Cd    = 0.546642
+    Cl    = 1.77484
+    Cl(f) = 1.03803
+    Cl(r) = 0.736807
+
+forceCoeffs canard_3 write:
+    Cm    = 0.625466
+    Cd    = 0.546642
+    Cl    = 1.77484
+    Cl(f) = 1.51289
+    Cl(r) = 0.261954
+
+forceCoeffs canard_4 write:
+    Cm    = 1.10032
+    Cd    = 0.546642
+    Cl    = 1.77484
+    Cl(f) = 1.98774
+    Cl(r) = -0.212899
+
+forceCoeffs canard_5 write:
+    Cm    = 1.57517
+    Cd    = 0.546642
+    Cl    = 1.77484
+    Cl(f) = 2.46259
+    Cl(r) = -0.687752
+
+forceCoeffs canard_6 write:
+    Cm    = 2.05002
+    Cd    = 0.546642
+    Cl    = 1.77484
+    Cl(f) = 2.93744
+    Cl(r) = -1.16261
+
+forceCoeffs canard_7 write:
+    Cm    = 2.52488
+    Cd    = 0.546642
+    Cl    = 1.77484
+    Cl(f) = 3.4123
+    Cl(r) = -1.63746
+
+forceCoeffs canard_8 write:
+    Cm    = 2.99973
+    Cd    = 0.546642
+    Cl    = 1.77484
+    Cl(f) = 3.88715
+    Cl(r) = -2.11231
+
+forceCoeffs canard_9 write:
+    Cm    = 3.47458
+    Cd    = 0.546642
+    Cl    = 1.77484
+    Cl(f) = 4.362
+    Cl(r) = -2.58716
+
+forceCoeffs canard_10 write:
+    Cm    = 3.94944
+    Cd    = 0.546642
+    Cl    = 1.77484
+    Cl(f) = 4.83686
+    Cl(r) = -3.06202
+
+forceCoeffs canard_11 write:
+    Cm    = 4.42429
+    Cd    = 0.546642
+    Cl    = 1.77484
+    Cl(f) = 5.31171
+    Cl(r) = -3.53687
+
+Time = 28s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00268557, Final residual = 0.000132477, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00185868, Final residual = 9.73977e-05, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0203274, Final residual = 0.00100308, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0293828, Final residual = 0.002844, No Iterations 2
+time step continuity errors : sum local = 0.000479891, global = -1.51419e-05, cumulative = 2.8506e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0342898, Final residual = 0.00130363, No Iterations 2
+bounding nuTilda, min: -0.00838432 max: 0.0667752 average: 0.0147191
+ExecutionTime = 511.128 s  ClockTime = 522 s
+
+forceCoeffs canard_1 write:
+    Cm    = -0.324247
+    Cd    = 0.553456
+    Cl    = 1.77753
+    Cl(f) = 0.56452
+    Cl(r) = 1.21301
+
+forceCoeffs canard_2 write:
+    Cm    = 0.152112
+    Cd    = 0.553456
+    Cl    = 1.77753
+    Cl(f) = 1.04088
+    Cl(r) = 0.736655
+
+forceCoeffs canard_3 write:
+    Cm    = 0.62847
+    Cd    = 0.553456
+    Cl    = 1.77753
+    Cl(f) = 1.51724
+    Cl(r) = 0.260297
+
+forceCoeffs canard_4 write:
+    Cm    = 1.10483
+    Cd    = 0.553456
+    Cl    = 1.77753
+    Cl(f) = 1.9936
+    Cl(r) = -0.216062
+
+forceCoeffs canard_5 write:
+    Cm    = 1.58119
+    Cd    = 0.553456
+    Cl    = 1.77753
+    Cl(f) = 2.46995
+    Cl(r) = -0.692421
+
+forceCoeffs canard_6 write:
+    Cm    = 2.05755
+    Cd    = 0.553456
+    Cl    = 1.77753
+    Cl(f) = 2.94631
+    Cl(r) = -1.16878
+
+forceCoeffs canard_7 write:
+    Cm    = 2.53391
+    Cd    = 0.553456
+    Cl    = 1.77753
+    Cl(f) = 3.42267
+    Cl(r) = -1.64514
+
+forceCoeffs canard_8 write:
+    Cm    = 3.01026
+    Cd    = 0.553456
+    Cl    = 1.77753
+    Cl(f) = 3.89903
+    Cl(r) = -2.1215
+
+forceCoeffs canard_9 write:
+    Cm    = 3.48662
+    Cd    = 0.553456
+    Cl    = 1.77753
+    Cl(f) = 4.37539
+    Cl(r) = -2.59786
+
+forceCoeffs canard_10 write:
+    Cm    = 3.96298
+    Cd    = 0.553456
+    Cl    = 1.77753
+    Cl(f) = 4.85175
+    Cl(r) = -3.07421
+
+forceCoeffs canard_11 write:
+    Cm    = 4.43934
+    Cd    = 0.553456
+    Cl    = 1.77753
+    Cl(f) = 5.32811
+    Cl(r) = -3.55057
+
+Time = 29s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00254119, Final residual = 0.000126782, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00179307, Final residual = 9.36623e-05, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.020347, Final residual = 0.000984298, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0268715, Final residual = 0.00266741, No Iterations 2
+time step continuity errors : sum local = 0.000464356, global = -2.35187e-05, cumulative = 4.98724e-06
+smoothSolver:  Solving for nuTilda, Initial residual = 0.033861, Final residual = 0.00128721, No Iterations 2
+bounding nuTilda, min: -0.00977968 max: 0.0667752 average: 0.0146862
+ExecutionTime = 527.086 s  ClockTime = 538 s
+
+forceCoeffs canard_1 write:
+    Cm    = -0.330425
+    Cd    = 0.571875
+    Cl    = 1.80229
+    Cl(f) = 0.570721
+    Cl(r) = 1.23157
+
+forceCoeffs canard_2 write:
+    Cm    = 0.153973
+    Cd    = 0.571875
+    Cl    = 1.80229
+    Cl(f) = 1.05512
+    Cl(r) = 0.747173
+
+forceCoeffs canard_3 write:
+    Cm    = 0.638371
+    Cd    = 0.571875
+    Cl    = 1.80229
+    Cl(f) = 1.53952
+    Cl(r) = 0.262775
+
+forceCoeffs canard_4 write:
+    Cm    = 1.12277
+    Cd    = 0.571875
+    Cl    = 1.80229
+    Cl(f) = 2.02391
+    Cl(r) = -0.221623
+
+forceCoeffs canard_5 write:
+    Cm    = 1.60717
+    Cd    = 0.571875
+    Cl    = 1.80229
+    Cl(f) = 2.50831
+    Cl(r) = -0.706021
+
+forceCoeffs canard_6 write:
+    Cm    = 2.09157
+    Cd    = 0.571875
+    Cl    = 1.80229
+    Cl(f) = 2.99271
+    Cl(r) = -1.19042
+
+forceCoeffs canard_7 write:
+    Cm    = 2.57596
+    Cd    = 0.571875
+    Cl    = 1.80229
+    Cl(f) = 3.47711
+    Cl(r) = -1.67482
+
+forceCoeffs canard_8 write:
+    Cm    = 3.06036
+    Cd    = 0.571875
+    Cl    = 1.80229
+    Cl(f) = 3.96151
+    Cl(r) = -2.15922
+
+forceCoeffs canard_9 write:
+    Cm    = 3.54476
+    Cd    = 0.571875
+    Cl    = 1.80229
+    Cl(f) = 4.44591
+    Cl(r) = -2.64361
+
+forceCoeffs canard_10 write:
+    Cm    = 4.02916
+    Cd    = 0.571875
+    Cl    = 1.80229
+    Cl(f) = 4.9303
+    Cl(r) = -3.12801
+
+forceCoeffs canard_11 write:
+    Cm    = 4.51356
+    Cd    = 0.571875
+    Cl    = 1.80229
+    Cl(f) = 5.4147
+    Cl(r) = -3.61241
+
+Time = 30s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00246175, Final residual = 0.000122594, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00176051, Final residual = 9.15921e-05, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.02017, Final residual = 0.000952158, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0232986, Final residual = 0.00222148, No Iterations 2
+time step continuity errors : sum local = 0.000410024, global = -3.32324e-05, cumulative = -2.82451e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0341006, Final residual = 0.00128487, No Iterations 2
+bounding nuTilda, min: -0.00837548 max: 0.0667752 average: 0.0146579
+ExecutionTime = 562.919 s  ClockTime = 574 s
+
+forceCoeffs canard_1 write:
+    Cm    = -0.330911
+    Cd    = 0.582859
+    Cl    = 1.82265
+    Cl(f) = 0.580415
+    Cl(r) = 1.24224
+
+forceCoeffs canard_2 write:
+    Cm    = 0.159552
+    Cd    = 0.582859
+    Cl    = 1.82265
+    Cl(f) = 1.07088
+    Cl(r) = 0.751773
+
+forceCoeffs canard_3 write:
+    Cm    = 0.650016
+    Cd    = 0.582859
+    Cl    = 1.82265
+    Cl(f) = 1.56134
+    Cl(r) = 0.26131
+
+forceCoeffs canard_4 write:
+    Cm    = 1.14048
+    Cd    = 0.582859
+    Cl    = 1.82265
+    Cl(f) = 2.0518
+    Cl(r) = -0.229153
+
+forceCoeffs canard_5 write:
+    Cm    = 1.63094
+    Cd    = 0.582859
+    Cl    = 1.82265
+    Cl(f) = 2.54227
+    Cl(r) = -0.719617
+
+forceCoeffs canard_6 write:
+    Cm    = 2.12141
+    Cd    = 0.582859
+    Cl    = 1.82265
+    Cl(f) = 3.03273
+    Cl(r) = -1.21008
+
+forceCoeffs canard_7 write:
+    Cm    = 2.61187
+    Cd    = 0.582859
+    Cl    = 1.82265
+    Cl(f) = 3.52319
+    Cl(r) = -1.70054
+
+forceCoeffs canard_8 write:
+    Cm    = 3.10233
+    Cd    = 0.582859
+    Cl    = 1.82265
+    Cl(f) = 4.01366
+    Cl(r) = -2.19101
+
+forceCoeffs canard_9 write:
+    Cm    = 3.5928
+    Cd    = 0.582859
+    Cl    = 1.82265
+    Cl(f) = 4.50412
+    Cl(r) = -2.68147
+
+forceCoeffs canard_10 write:
+    Cm    = 4.08326
+    Cd    = 0.582859
+    Cl    = 1.82265
+    Cl(f) = 4.99458
+    Cl(r) = -3.17193
+
+forceCoeffs canard_11 write:
+    Cm    = 4.57372
+    Cd    = 0.582859
+    Cl    = 1.82265
+    Cl(f) = 5.48505
+    Cl(r) = -3.6624
+
+Time = 31s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00239504, Final residual = 0.000117671, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00178551, Final residual = 9.19643e-05, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0198143, Final residual = 0.000913628, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0210536, Final residual = 0.00187512, No Iterations 2
+time step continuity errors : sum local = 0.000360122, global = -2.73339e-05, cumulative = -5.5579e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0336579, Final residual = 0.00127109, No Iterations 2
+bounding nuTilda, min: -0.00976 max: 0.0667752 average: 0.0146302
+ExecutionTime = 579.64 s  ClockTime = 591 s
+
+forceCoeffs canard_1 write:
+    Cm    = -0.319859
+    Cd    = 0.575855
+    Cl    = 1.81929
+    Cl(f) = 0.589787
+    Cl(r) = 1.2295
+
+forceCoeffs canard_2 write:
+    Cm    = 0.168923
+    Cd    = 0.575855
+    Cl    = 1.81929
+    Cl(f) = 1.07857
+    Cl(r) = 0.740723
+
+forceCoeffs canard_3 write:
+    Cm    = 0.657705
+    Cd    = 0.575855
+    Cl    = 1.81929
+    Cl(f) = 1.56735
+    Cl(r) = 0.251941
+
+forceCoeffs canard_4 write:
+    Cm    = 1.14649
+    Cd    = 0.575855
+    Cl    = 1.81929
+    Cl(f) = 2.05613
+    Cl(r) = -0.23684
+
+forceCoeffs canard_5 write:
+    Cm    = 1.63527
+    Cd    = 0.575855
+    Cl    = 1.81929
+    Cl(f) = 2.54491
+    Cl(r) = -0.725622
+
+forceCoeffs canard_6 write:
+    Cm    = 2.12405
+    Cd    = 0.575855
+    Cl    = 1.81929
+    Cl(f) = 3.0337
+    Cl(r) = -1.2144
+
+forceCoeffs canard_7 write:
+    Cm    = 2.61283
+    Cd    = 0.575855
+    Cl    = 1.81929
+    Cl(f) = 3.52248
+    Cl(r) = -1.70319
+
+forceCoeffs canard_8 write:
+    Cm    = 3.10161
+    Cd    = 0.575855
+    Cl    = 1.81929
+    Cl(f) = 4.01126
+    Cl(r) = -2.19197
+
+forceCoeffs canard_9 write:
+    Cm    = 3.5904
+    Cd    = 0.575855
+    Cl    = 1.81929
+    Cl(f) = 4.50004
+    Cl(r) = -2.68075
+
+forceCoeffs canard_10 write:
+    Cm    = 4.07918
+    Cd    = 0.575855
+    Cl    = 1.81929
+    Cl(f) = 4.98882
+    Cl(r) = -3.16953
+
+forceCoeffs canard_11 write:
+    Cm    = 4.56796
+    Cd    = 0.575855
+    Cl    = 1.81929
+    Cl(f) = 5.4776
+    Cl(r) = -3.65831
+
+Time = 32s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00235516, Final residual = 0.000113455, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.0018021, Final residual = 9.35492e-05, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0190292, Final residual = 0.000867297, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0202343, Final residual = 0.00179512, No Iterations 2
+time step continuity errors : sum local = 0.000346907, global = -2.05522e-05, cumulative = -7.61313e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0339581, Final residual = 0.00127057, No Iterations 2
+bounding nuTilda, min: -0.00836097 max: 0.0667752 average: 0.0146061
+ExecutionTime = 594.339 s  ClockTime = 605 s
+
+forceCoeffs canard_1 write:
+    Cm    = -0.300736
+    Cd    = 0.553186
+    Cl    = 1.79018
+    Cl(f) = 0.594355
+    Cl(r) = 1.19583
+
+forceCoeffs canard_2 write:
+    Cm    = 0.178461
+    Cd    = 0.553186
+    Cl    = 1.79018
+    Cl(f) = 1.07355
+    Cl(r) = 0.71663
+
+forceCoeffs canard_3 write:
+    Cm    = 0.657657
+    Cd    = 0.553186
+    Cl    = 1.79018
+    Cl(f) = 1.55275
+    Cl(r) = 0.237434
+
+forceCoeffs canard_4 write:
+    Cm    = 1.13685
+    Cd    = 0.553186
+    Cl    = 1.79018
+    Cl(f) = 2.03194
+    Cl(r) = -0.241762
+
+forceCoeffs canard_5 write:
+    Cm    = 1.61605
+    Cd    = 0.553186
+    Cl    = 1.79018
+    Cl(f) = 2.51114
+    Cl(r) = -0.720959
+
+forceCoeffs canard_6 write:
+    Cm    = 2.09525
+    Cd    = 0.553186
+    Cl    = 1.79018
+    Cl(f) = 2.99034
+    Cl(r) = -1.20016
+
+forceCoeffs canard_7 write:
+    Cm    = 2.57444
+    Cd    = 0.553186
+    Cl    = 1.79018
+    Cl(f) = 3.46953
+    Cl(r) = -1.67935
+
+forceCoeffs canard_8 write:
+    Cm    = 3.05364
+    Cd    = 0.553186
+    Cl    = 1.79018
+    Cl(f) = 3.94873
+    Cl(r) = -2.15855
+
+forceCoeffs canard_9 write:
+    Cm    = 3.53284
+    Cd    = 0.553186
+    Cl    = 1.79018
+    Cl(f) = 4.42793
+    Cl(r) = -2.63774
+
+forceCoeffs canard_10 write:
+    Cm    = 4.01203
+    Cd    = 0.553186
+    Cl    = 1.79018
+    Cl(f) = 4.90712
+    Cl(r) = -3.11694
+
+forceCoeffs canard_11 write:
+    Cm    = 4.49123
+    Cd    = 0.553186
+    Cl    = 1.79018
+    Cl(f) = 5.38632
+    Cl(r) = -3.59614
+
+Time = 33s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00229319, Final residual = 0.000109684, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00177836, Final residual = 9.38559e-05, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.017883, Final residual = 0.000817697, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0195073, Final residual = 0.00170726, No Iterations 2
+time step continuity errors : sum local = 0.000322862, global = -1.76124e-05, cumulative = -9.37437e-05
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0335281, Final residual = 0.00125844, No Iterations 2
+bounding nuTilda, min: -0.00973842 max: 0.0667752 average: 0.0145803
+ExecutionTime = 615.746 s  ClockTime = 627 s
+
+forceCoeffs canard_1 write:
+    Cm    = -0.284667
+    Cd    = 0.530372
+    Cl    = 1.75458
+    Cl(f) = 0.592624
+    Cl(r) = 1.16196
+
+forceCoeffs canard_2 write:
+    Cm    = 0.183451
+    Cd    = 0.530372
+    Cl    = 1.75458
+    Cl(f) = 1.06074
+    Cl(r) = 0.693839
+
+forceCoeffs canard_3 write:
+    Cm    = 0.651568
+    Cd    = 0.530372
+    Cl    = 1.75458
+    Cl(f) = 1.52886
+    Cl(r) = 0.225722
+
+forceCoeffs canard_4 write:
+    Cm    = 1.11969
+    Cd    = 0.530372
+    Cl    = 1.75458
+    Cl(f) = 1.99698
+    Cl(r) = -0.242395
+
+forceCoeffs canard_5 write:
+    Cm    = 1.5878
+    Cd    = 0.530372
+    Cl    = 1.75458
+    Cl(f) = 2.46509
+    Cl(r) = -0.710512
+
+forceCoeffs canard_6 write:
+    Cm    = 2.05592
+    Cd    = 0.530372
+    Cl    = 1.75458
+    Cl(f) = 2.93321
+    Cl(r) = -1.17863
+
+forceCoeffs canard_7 write:
+    Cm    = 2.52404
+    Cd    = 0.530372
+    Cl    = 1.75458
+    Cl(f) = 3.40133
+    Cl(r) = -1.64675
+
+forceCoeffs canard_8 write:
+    Cm    = 2.99215
+    Cd    = 0.530372
+    Cl    = 1.75458
+    Cl(f) = 3.86944
+    Cl(r) = -2.11486
+
+forceCoeffs canard_9 write:
+    Cm    = 3.46027
+    Cd    = 0.530372
+    Cl    = 1.75458
+    Cl(f) = 4.33756
+    Cl(r) = -2.58298
+
+forceCoeffs canard_10 write:
+    Cm    = 3.92839
+    Cd    = 0.530372
+    Cl    = 1.75458
+    Cl(f) = 4.80568
+    Cl(r) = -3.0511
+
+forceCoeffs canard_11 write:
+    Cm    = 4.39651
+    Cd    = 0.530372
+    Cl    = 1.75458
+    Cl(f) = 5.2738
+    Cl(r) = -3.51922
+
+Time = 34s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.002201, Final residual = 0.000105119, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00172677, Final residual = 9.20881e-05, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0167655, Final residual = 0.000782846, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0188769, Final residual = 0.00157856, No Iterations 2
+time step continuity errors : sum local = 0.00028932, global = -1.32413e-05, cumulative = -0.000106985
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0338009, Final residual = 0.00125895, No Iterations 2
+bounding nuTilda, min: -0.00834406 max: 0.0667752 average: 0.014556
+ExecutionTime = 636.663 s  ClockTime = 651 s
+
+forceCoeffs canard_1 write:
+    Cm    = -0.279558
+    Cd    = 0.520775
+    Cl    = 1.73315
+    Cl(f) = 0.587016
+    Cl(r) = 1.14613
+
+forceCoeffs canard_2 write:
+    Cm    = 0.182432
+    Cd    = 0.520775
+    Cl    = 1.73315
+    Cl(f) = 1.04901
+    Cl(r) = 0.684142
+
+forceCoeffs canard_3 write:
+    Cm    = 0.644423
+    Cd    = 0.520775
+    Cl    = 1.73315
+    Cl(f) = 1.511
+    Cl(r) = 0.222152
+
+forceCoeffs canard_4 write:
+    Cm    = 1.10641
+    Cd    = 0.520775
+    Cl    = 1.73315
+    Cl(f) = 1.97299
+    Cl(r) = -0.239839
+
+forceCoeffs canard_5 write:
+    Cm    = 1.5684
+    Cd    = 0.520775
+    Cl    = 1.73315
+    Cl(f) = 2.43498
+    Cl(r) = -0.701829
+
+forceCoeffs canard_6 write:
+    Cm    = 2.03039
+    Cd    = 0.520775
+    Cl    = 1.73315
+    Cl(f) = 2.89697
+    Cl(r) = -1.16382
+
+forceCoeffs canard_7 write:
+    Cm    = 2.49238
+    Cd    = 0.520775
+    Cl    = 1.73315
+    Cl(f) = 3.35896
+    Cl(r) = -1.62581
+
+forceCoeffs canard_8 write:
+    Cm    = 2.95437
+    Cd    = 0.520775
+    Cl    = 1.73315
+    Cl(f) = 3.82095
+    Cl(r) = -2.0878
+
+forceCoeffs canard_9 write:
+    Cm    = 3.41637
+    Cd    = 0.520775
+    Cl    = 1.73315
+    Cl(f) = 4.28294
+    Cl(r) = -2.54979
+
+forceCoeffs canard_10 write:
+    Cm    = 3.87836
+    Cd    = 0.520775
+    Cl    = 1.73315
+    Cl(f) = 4.74493
+    Cl(r) = -3.01178
+
+forceCoeffs canard_11 write:
+    Cm    = 4.34035
+    Cd    = 0.520775
+    Cl    = 1.73315
+    Cl(f) = 5.20692
+    Cl(r) = -3.47377
+
+Time = 35s
+

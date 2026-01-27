@@ -1,0 +1,70 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Website:  https://openfoam.org                  |
+|   \\  /    A nd           | Version:  12                                    |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    object      nuTilda;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// Campo auxiliar del modelo Spalart-Allmaras
+// Se inicializa como múltiplo de la viscosidad molecular (3-5 veces)
+
+dimensions      [0 2 -1 0 0 0 0];
+
+internalField   uniform 0.0268953973757;  // 5 veces nu
+
+boundaryField
+{
+    inlet
+    {
+        type            freestream;
+        freestreamValue uniform 0.0268953973757;
+    }
+    
+    outlet
+    {
+        type            freestream;
+        freestreamValue uniform 0.0268953973757;
+    }
+    
+    airfoilInternal
+    {
+        type            fixedValue;
+        value           uniform 0;
+    }
+    
+    airfoilExternal
+    {
+        type            fixedValue;
+        value           uniform 0;
+    }
+    
+    externalWalls
+    {
+         type            fixedValue;
+        value           uniform 0;
+    }
+    
+    frontAndBack
+    {
+        type            fixedValue;
+        value           uniform 0;
+    
+    }
+
+    avion
+    {
+    type            fixedValue;
+        value           uniform 0;// o fixedValue dependiendo del caso
+    }
+}
+
+// ************************************************************************* //

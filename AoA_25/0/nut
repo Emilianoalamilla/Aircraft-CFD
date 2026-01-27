@@ -1,0 +1,74 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Website:  https://openfoam.org                  |
+|   \\  /    A nd           | Version:  12                                    |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    object      nu;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// Viscosidad cinemática para aire a temperatura ambiente
+// nu = 1.5e-5 m²/s
+
+dimensions      [0 2 -1 0 0 0 0];
+
+internalField   uniform 0.134476986878796;
+
+boundaryField
+{
+    inlet
+    {
+        type            freestream;
+        freestreamValue uniform 0.134476986878796;
+    }
+    
+    outlet
+    {
+        type            freestream;
+        freestreamValue uniform 0.134476986878796;
+    }
+    
+    airfoilInternal
+    {
+        type            nutLowReWallFunction;
+        value           uniform 0.134476986878796;
+    }
+    
+    airfoilExternal
+    {
+        type            nutLowReWallFunction;
+        value           uniform 0.134476986878796;
+    }
+    
+   externalWalls
+{
+    type calculated;
+    value uniform 0;
+}
+
+    
+    frontAndBack
+    {
+     type            freestream;
+        freestreamValue uniform 0.134476986878796;
+    
+    }
+
+
+    avion
+    {
+    type            nutLowReWallFunction;
+        value           uniform 0.134476986878796;
+    }
+
+
+}
+
+// ************************************************************************* //
