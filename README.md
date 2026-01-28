@@ -1,5 +1,5 @@
 # Aircraft Aerodynamic Analysis (CFD) 
-Este proyecto contiene el estudio aerodinámico de un ala de aeronave mediante simulaciones de barrido de ángulos de ataque ($AoA$).
+Contiene el estudio aerodinámico de un ala de aeronave mediante simulaciones de barrido de ángulos de ataque ($AoA$).
 
 ##  Herramientas Utilizadas
 * **Solver:** OpenFOAM (`simpleFoam`)
